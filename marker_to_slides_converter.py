@@ -42,7 +42,7 @@ def get_block_semantic_type(marker_block):
     block_type = marker_block.get("block_type")
     section_hierarchy = marker_block.get("section_hierarchy") # e.g. {"1": "/page/0/SectionHeader/0"}
 
-    if block_type is "SectionHeader":
+    if block_type == "SectionHeader":
         if section_hierarchy:
             # Assuming the key "1", "2", etc. indicates h1, h2
             # This logic can be refined, e.g. first "1" is title, subsequent "1"s are headings
@@ -56,7 +56,7 @@ def get_block_semantic_type(marker_block):
             
         return "heading" # Default for SectionHeader if no hierarchy info
     
-    elif block_type is "Text" or block_type == "TextInlineMath": # Treat TextInlineMath as Text for now
+    elif block_type == "Text" or block_type == "TextInlineMath": # Treat TextInlineMath as Text for now
         return "paragraph"
     
 
@@ -82,17 +82,59 @@ def extract_elements_from_marker(marker_data):
 
     all_elements = []
     processed_list_group_ids = set()
+    page_objects_to_process = [] # This list will hold the actual page dictionaries
 
-    for page_num_index, page_block in enumerate(marker_data):
+    if isinstance(marker_data, list):
+        page_objects_to_process = marker_data
+    elif isinstance(marker_data, dict):
+        root_block_type = marker_data.get("block_type")
+        if root_block_type == "Document": # If root is a "Document" block
+            page_objects_to_process = marker_data.get("children", []) # Pages are in its children
+        elif root_block_type == "Page": # If root is a single "Page" block
+            page_objects_to_process = [marker_data] # Process this single page
+        else:
+            print(f"Warning: Marker JSON root is a dictionary of unhandled type: {root_block_type}. Assuming no pages directly processable from this structure.")
+            return all_elements # Early exit if structure is unknown
+    else:
+        print(f"Error: Marker JSON data is not a list or dictionary. Type: {type(marker_data)}. Cannot process.")
+        return all_elements # Early exit
+    
+
+
+
+    for page_num_index, page_block in enumerate(page_objects_to_process):
+
+        if not isinstance(page_block, dict): # Safety check
+            print(f"Warning: Item in page list is not a dictionary (index {page_num_index}). Skipping. Item: {page_block}")
+            continue
 
         # Skip ignored other block types except for Page
         if page_block.get("block_type") != "Page":
             continue
 
-        original_page_number = int(page_block.get("id","").split('/')[2]) + 1 # Id format /page/X/...
+        # Robust Page Number Extraction
+        page_id = page_block.get("id")
+        original_page_number = page_num_index + 1 # Default if ID parsing fails
+        if page_id and isinstance(page_id, str):
+            try:
+                parts = page_id.split('/') # Example ID: /page/10/Page/366
+                if len(parts) > 2 and parts[1] == 'page': # Check for '/page/X/...' structure
+                    original_page_number = int(parts[2]) + 1 # Marker's page index is 0-based
+                else:
+                    print(f"Warning: Page ID '{page_id}' format not as expected for page number extraction. Using index {page_num_index}.")
+            except (ValueError, IndexError) as e: # Handle potential errors during parsing
+                print(f"Warning: Could not parse page number from ID '{page_id}'. Error: {e}. Using index {page_num_index}.")
+        else:
+            print(f"Warning: Page block (index {page_num_index}) has no valid ID. Using index for page number.")
+
 
         # Marker usually orders children by reading order, including columns so relying on it for now
         for child_block in page_block.get("children", []):
+
+            if not isinstance(child_block, dict): # Ensure child_block is a dictionary
+                print(f"Warning: Child block is not a dictionary. Skipping. Child: {child_block}")
+                continue
+
             block_id = child_block.get("id")
             marker_block_type = child_block.get("block_type")
 
@@ -161,6 +203,8 @@ def extract_elements_from_marker(marker_data):
 
 
                 })
+
+    print(all_elements)
 
     return all_elements
 
@@ -408,20 +452,42 @@ def main():
             # We can proceed without meta, but title/author might be less accurate.
 
     
-    with open(marker_json_path, 'r', encoding='utf-8') as f:
-        marker_data = json.load(f) # This is a list of page blocks
+    try: 
+        with open(marker_json_path, 'r', encoding='utf-8') as f:
+            marker_data_from_json = json.load(f) # This is a list of page blocks
 
-    total_pdf_pages = len(marker_data)
-    extracted_elements = extract_elements_from_marker(marker_data)
+    except json.JSONDecodeError as e:
+        print(f"Error decoding Marker JSON file {marker_json_path}: {e}")
+        return
+    except Exception as e:
+        print(f"Error reading Marker JSON file {marker_json_path}: {e}")
+        return
+    
+    total_pdf_pages_calculated = 0
+
+    if isinstance(marker_data_from_json, list):
+        total_pdf_pages_calculated = len([p for p in marker_data_from_json if isinstance(p, dict) and p.get("block_type") == "Page"])
+    elif isinstance(marker_data_from_json, dict):
+        if marker_data_from_json.get("block_type") == "Document":
+            children = marker_data_from_json.get("children", [])
+            total_pdf_pages_calculated = len([p for p in children if isinstance(p, dict) and p.get("block_type") == "Page"])
+        elif marker_data_from_json.get("block_type") == "Page":
+            total_pdf_pages_calculated = 1
+        else:
+            print(f"Warning: Cannot accurately determine total PDF pages from root dictionary type '{marker_data_from_json.get('block_type')}'. Setting to 0.")
+    else:
+        print(f"Warning: Cannot determine total PDF pages from data type {type(marker_data_from_json)}. Setting to 0.")
+
+    extracted_elements = extract_elements_from_marker(marker_data_from_json)
 
     slides = assemble_slides(extracted_elements)
 
-    final_document_json = create_document_json(slides, marker_json_path, marker_meta_json_path, args.pdf_path, total_pdf_pages)
+    final_document_json = create_document_json(slides, marker_json_path, marker_meta_json_path, args.pdf_path, total_pdf_pages_calculated)
 
     end_time = datetime.now()
     processing_time = (end_time - start_time).total_seconds()
 
-    final_document_json["processingMetadata"]["processingTime"] = processing_time
+    final_document_json["processingMetadata"]["processingTime"] = round(processing_time, 3)
 
     # Output the final JSON to stdout
     print(json.dumps(final_document_json, indent=2))
