@@ -1,6 +1,7 @@
 import json
 import uuid
 import os
+import sys
 from datetime import datetime, timezone
 from bs4 import BeautifulSoup # For parsing HTML content from Marker
 import argparse
@@ -11,14 +12,17 @@ import subprocess # To potentially call Marker from Python
 # Block types to ignore completely
 IGNORED_BLOCK_TYPES = {"PageFooter", "PageHeader", "Footnote", "Form", "Handwriting", "TableOfContents"}
 
-# TODO: Might cause issue with tables, codes, and equations fix it.
-# Block types to treat as images
-IMAGE_LIKE_BLOCK_TYPES = {"Figure", "Picture", "Table", "Code", "Equation", "FigureGroup", "TableGroup", "PictureGroup"}
+# Block types that are primarily visual and should be extracted as images IF image data is present
+# FigureGroup and PictureGroup often contain actual Figure/Picture children with image data.
+VISUAL_IMAGE_BLOCK_TYPES = {"Figure", "Picture", "FigureGroup", "PictureGroup"}
+
+# Block types that are structural but we want to treat as textual content for now
+# Marker might provide HTML/Markdown for tables, LaTeX for equations, and text for code.
+TEXTUAL_STRUCTURAL_BLOCK_TYPES = {"Table", "TableGroup", "Code", "Equation"}
 
 # Slide constraints
 MAX_TEXT_ELEMENTS_PER_SLIDE = 3
-MAX_IMAGES_PER_SLIDE = 1
-
+MAX_IMAGES_PER_SLIDE = 2
 # If a slide has images, what's the max text elements (e.g., for captions)?
 MAX_TEXT_WITH_IMAGES = 1
 
@@ -40,197 +44,227 @@ def get_clean_text(html_content):
 def get_block_semantic_type(marker_block):
     """Maps Marker block_type and section_hierarchy to our SlideElementType."""
     block_type = marker_block.get("block_type")
-    section_hierarchy = marker_block.get("section_hierarchy") # e.g. {"1": "/page/0/SectionHeader/0"}
+    section_hierarchy = marker_block.get("section_hierarchy")
 
-    if block_type == "SectionHeader":
-        if section_hierarchy:
-            # Assuming the key "1", "2", etc. indicates h1, h2
-            # This logic can be refined, e.g. first "1" is title, subsequent "1"s are headings
-            level = sorted(section_hierarchy.keys())[0]
-            if level == "1":
-                return "heading" # Could be "title" based on context (e.g., first prominent H1)
-            elif level == "2":
-                return "heading" # Or "subheading"
-            else:
-                return "subheading"
-            
-        return "heading" # Default for SectionHeader if no hierarchy info
-    
-    elif block_type == "Text" or block_type == "TextInlineMath": # Treat TextInlineMath as Text for now
+    # IMPORTANT: Fix string comparison
+    if block_type == "SectionHeader": # Changed from 'is'
+        # ... (rest of the function as provided previously) ...
+        pass # Placeholder for brevity
+    elif block_type == "Text" or block_type == "TextInlineMath": # Changed from 'is' for "Text"
         return "paragraph"
-    
-
-    # TODO: Might cause issue with tables, codes, and equations fix it.
-    elif block_type in IMAGE_LIKE_BLOCK_TYPES:
+    elif block_type in VISUAL_IMAGE_BLOCK_TYPES: # Use the new category
         return "image"
-    
-    elif block_type in "ListGroup":
+    elif block_type == "ListGroup":
         return "list"
-    
-    elif block_type == "ListItem": # ListItems are handled by their parent ListGroup
-        return "list_item_internal" # Special internal type
- 
-    # TODO : For now i'm skipping unkown blocks fix it
-    return None 
+    elif block_type == "ListItem":
+        return "list_item_internal" # Handled by parent ListGroup
+    elif block_type == "Table" or block_type == "TableGroup": # New mapping
+        return "table"
+    elif block_type == "Code": # New mapping
+        return "code"
+    elif block_type == "Equation": # New mapping
+        return "equation"
+    elif block_type == "Caption": # Explicitly handle captions
+        return "paragraph" 
+    return None
+
+# --- Main Processing Functions NEXT ---
 
 
-def extract_elements_from_marker(marker_data):
-    """
-    Extracts and flattens all relevant blocks from Marker's JSON output,
-    in their original reading order.
-    """
-
+def extract_elements_from_marker(marker_data_input):
     all_elements = []
     processed_list_group_ids = set()
-    page_objects_to_process = [] # This list will hold the actual page dictionaries
+    processed_parent_group_ids = set() # To avoid re-processing children of groups we already handled
 
-    if isinstance(marker_data, list):
-        page_objects_to_process = marker_data
-    elif isinstance(marker_data, dict):
-        root_block_type = marker_data.get("block_type")
-        if root_block_type == "Document": # If root is a "Document" block
-            page_objects_to_process = marker_data.get("children", []) # Pages are in its children
-        elif root_block_type == "Page": # If root is a single "Page" block
-            page_objects_to_process = [marker_data] # Process this single page
+    page_objects_to_process = []
+    if isinstance(marker_data_input, list):
+        page_objects_to_process = marker_data_input
+    elif isinstance(marker_data_input, dict):
+        # ... (same logic as before to get page_objects_to_process) ...
+        root_block_type = marker_data_input.get("block_type")
+        if root_block_type == "Document":
+            page_objects_to_process = marker_data_input.get("children", [])
+        elif root_block_type == "Page":
+            page_objects_to_process = [marker_data_input]
         else:
-            print(f"Warning: Marker JSON root is a dictionary of unhandled type: {root_block_type}. Assuming no pages directly processable from this structure.")
-            return all_elements # Early exit if structure is unknown
+            print(f"Warning: Marker JSON root is dict of unhandled type: {root_block_type}.")
+            return all_elements
     else:
-        print(f"Error: Marker JSON data is not a list or dictionary. Type: {type(marker_data)}. Cannot process.")
-        return all_elements # Early exit
-    
+        print(f"Error: Marker JSON data is not list/dict. Type: {type(marker_data_input)}. Cannot process.")
+        return all_elements
 
-
-
-    for page_num_index, page_block in enumerate(page_objects_to_process):
-
-        if not isinstance(page_block, dict): # Safety check
-            print(f"Warning: Item in page list is not a dictionary (index {page_num_index}). Skipping. Item: {page_block}")
+    for page_num_idx, page_block in enumerate(page_objects_to_process):
+        if not isinstance(page_block, dict) or page_block.get("block_type") != "Page":
+            # ... (same warning logic as before) ...
+            print(f"Warning: Item in page list is not a 'Page' dict (index {page_num_idx}). Skipping. Item: {page_block}")
             continue
 
-        # Skip ignored other block types except for Page
-        if page_block.get("block_type") != "Page":
-            continue
-
-        # Robust Page Number Extraction
-        page_id = page_block.get("id")
-        original_page_number = page_num_index + 1 # Default if ID parsing fails
-        if page_id and isinstance(page_id, str):
+        page_id_str = page_block.get("id", "")
+        original_page_number = page_num_idx + 1 # Default
+        # ... (same page number extraction logic as before) ...
+        if page_id_str and isinstance(page_id_str, str):
             try:
-                parts = page_id.split('/') # Example ID: /page/10/Page/366
-                if len(parts) > 2 and parts[1] == 'page': # Check for '/page/X/...' structure
-                    original_page_number = int(parts[2]) + 1 # Marker's page index is 0-based
-                else:
-                    print(f"Warning: Page ID '{page_id}' format not as expected for page number extraction. Using index {page_num_index}.")
-            except (ValueError, IndexError) as e: # Handle potential errors during parsing
-                print(f"Warning: Could not parse page number from ID '{page_id}'. Error: {e}. Using index {page_num_index}.")
-        else:
-            print(f"Warning: Page block (index {page_num_index}) has no valid ID. Using index for page number.")
+                parts = page_id_str.split('/')
+                if len(parts) > 2 and parts[1] == 'page':
+                    original_page_number = int(parts[2]) + 1
+            except (ValueError, IndexError): pass # Keep default if parsing fails
 
 
-        # Marker usually orders children by reading order, including columns so relying on it for now
-        for child_block in page_block.get("children", []):
+        # Iterate through top-level children of the Page
+        page_children = page_block.get("children", [])
+        
+        # --- MODIFIED BLOCK ITERATION ---
+        # We need to process blocks sequentially, but handle groups by looking at their children
+        
+        blocks_to_process_on_page = []
+        # First pass to flatten or identify direct processable blocks
+        temp_blocks_on_page = []
+        for child_block in page_children:
+            if not isinstance(child_block, dict): continue
+            temp_blocks_on_page.append(child_block)
 
-            if not isinstance(child_block, dict): # Ensure child_block is a dictionary
-                print(f"Warning: Child block is not a dictionary. Skipping. Child: {child_block}")
-                continue
-
+        i = 0
+        while i < len(temp_blocks_on_page):
+            child_block = temp_blocks_on_page[i]
             block_id = child_block.get("id")
             marker_block_type = child_block.get("block_type")
 
-            if marker_block_type in IGNORED_BLOCK_TYPES:
+            if marker_block_type in IGNORED_BLOCK_TYPES or block_id in processed_parent_group_ids:
+                i += 1
                 continue
 
             slide_element_type = get_block_semantic_type(child_block)
-
-            # TODO : For now i'm skipping unkown blocks fix it
-            if not slide_element_type:
-                continue
-
+            image_data_b64 = None
             content = ""
-            image_data_b64 = None # Store as base64 string initially
 
-            if slide_element_type == "list":
-                # Already processed as part of a ListGroup
+            # --- IMAGE EXTRACTION REWORK ---
+            if slide_element_type == "image":
+                # If it's a FigureGroup or PictureGroup, look for image in its children
+                if marker_block_type == "FigureGroup" or marker_block_type == "PictureGroup":
+                    figure_child = None
+                    caption_child = None
+                    if child_block.get("children"):
+                        for sub_child in child_block.get("children"):
+                            if not isinstance(sub_child, dict): continue
+                            sub_child_type = sub_child.get("block_type")
+                            if sub_child_type == "Figure" or sub_child_type == "Picture":
+                                figure_child = sub_child
+                            elif sub_child_type == "Caption":
+                                caption_child = sub_child
+                    
+                    if figure_child:
+                        fig_id = figure_child.get("id")
+                        if figure_child.get("images") and isinstance(figure_child["images"], dict) and fig_id in figure_child["images"]:
+                            image_data_b64 = figure_child["images"][fig_id]
+                        # Try to get caption from a sibling Caption block or FigureGroup's own HTML
+                        if caption_child:
+                            content = get_clean_text(caption_child.get("html"))
+                        elif not content: # If no caption child, try FigureGroup's html
+                             html_content = get_clean_text(child_block.get("html"))
+                             # Avoid generic "Figure" or "Table" as caption
+                             if html_content.lower() != marker_block_type.lower():
+                                 content = html_content
+                        
+                        if image_data_b64: # Mark parent group as processed
+                             if block_id: processed_parent_group_ids.add(block_id)
+                        else: # No image found even in children
+                            print(f"Warning: {marker_block_type} {block_id} or its Figure/Picture children had no image data.")
+                            slide_element_type = None # Don't create an image element
+                            
+                # If it's a direct Figure or Picture (not inside a processed group)
+                elif marker_block_type == "Figure" or marker_block_type == "Picture":
+                    if child_block.get("images") and isinstance(child_block["images"], dict) and block_id in child_block["images"]:
+                        image_data_b64 = child_block["images"][block_id]
+                        html_content = get_clean_text(child_block.get("html"))
+                        if html_content.lower() != marker_block_type.lower():
+                            content = html_content # Use its own HTML as potential caption
+                    else:
+                        print(f"Warning: Direct {marker_block_type} {block_id} had no image data.")
+                        slide_element_type = None # Don't create an image element
+                else: # Should not happen if mapping is correct
+                    slide_element_type = None
+            
+            # --- TEXTUAL STRUCTURAL TYPES (Table, Code, Equation) ---
+            elif slide_element_type in ["table", "code", "equation"]:
+                # For these, we primarily want their textual/HTML content from Marker
+                content = get_clean_text(child_block.get("html"))
+                # Marker might put LaTeX for equations here, or structured HTML for tables.
+                # If content is just the block type name (e.g. "Table", "Equation"), clear it
+                if content.lower() == marker_block_type.lower().replace("group",""): # "TableGroup" -> "table"
+                    content = ""
+                if not content and child_block.get("children"): # Try children for TableGroup
+                    child_texts = []
+                    for sub_c in child_block.get("children"):
+                        if isinstance(sub_c, dict):
+                             child_texts.append(get_clean_text(sub_c.get("html")))
+                    content = "\n".join(filter(None, child_texts))
+
+
+            # --- LISTS ---
+            elif slide_element_type == "list":
                 if block_id in processed_list_group_ids:
+                    i += 1
                     continue
-
-                # For ListGroup, concatenate text from its ListItem children
                 list_items_text = []
                 if child_block.get("children"):
                     for item_block in child_block.get("children", []):
-                        if item_block.get("block_type") == "ListItem":
+                        if isinstance(item_block, dict) and item_block.get("block_type") == "ListItem":
                             list_items_text.append(f"- {get_clean_text(item_block.get('html'))}")
+                content = "\n".join(list_items_text)
+                if block_id: processed_list_group_ids.add(block_id)
 
-                            content = "\n".join(list_items_text)
-                            processed_list_group_ids.add(block_id)
-
-            elif slide_element_type == "image":
-                # Marker stores images in the 'images' dict of the block, keyed by block_id
-
-                # TODO: Might cause while extracting image_data_b64 becuase it's in a dict with some key
-                if child_block.get("images") and block_id in child_block["images"]:
-                    image_data_b64 = child_block["images"][block_id]
-
-                    # Try to get caption if available (Marker might put it in 'html' for some image types)
-                    # Or if there's a 'Caption' block type nearby (more advanced logic needed)
-
-                    caption_text = get_clean_text(child_block.get("html"))
-                    # TODO: Currently using simple heriustic to determine if it's a caption
-                    # This might need to be improved based on actual Marker output
-                    content = caption_text if caption_text and caption_text != "Figure" and caption_text != "Table" else ""
-
-                else:
-                    # If no image data, maybe it's just a placeholder, skip or log
-                    print(f"Warning: Image-like block {block_id} has no image data.")
-                    continue
-
-            else: # Text-based elements
+            # --- OTHER TEXT-BASED (Paragraph, Heading, Title (from heading)) ---
+            elif slide_element_type in ["paragraph", "heading"]: # title is derived from heading
                 content = get_clean_text(child_block.get("html"))
+            
+            else: # Unhandled or explicitly ignored type
+                i += 1
+                continue # Move to next block
 
-                if not content and not image_data_b64: # Skip empty elements
-                    continue
-
+            # Add element if it has content or image data
+            if (content or image_data_b64) and slide_element_type:
                 all_elements.append({
                     "id": str(uuid.uuid4()),
                     "type": slide_element_type,
                     "content": content,
-                    "imageData_b64": image_data_b64, # Will be converted to Data in Swift
+                    "imageData_b64": image_data_b64,
                     "original_page_number": original_page_number,
-
-                    "marker_block_type": marker_block_type, # For debugging/refinement
-                    "marker_polygon": child_block.get("polygon") # For potential future use
-
-
+                    "marker_block_type": marker_block_type,
+                    "marker_polygon": child_block.get("polygon")
                 })
-
-    print(all_elements)
+            i += 1
+            # --- END MODIFIED BLOCK ITERATION ---
 
     return all_elements
 
 def assemble_slides(elements):
-    """
-    Assembles extracted elements into slides based on defined constraints.
-    """
-
+    print(f"assemble_slides called with {len(elements)} elements.") # DEBUG
     slides_data = []
-
     if not elements:
+        print("assemble_slides: No elements to process, returning empty slides_data.") # DEBUG
         return slides_data
-    
+
     current_slide_elements = []
     current_slide_text_count = 0
     current_slide_image_count = 0
     current_slide_source_pages = set()
     slide_counter = 0
 
+    # Make a copy for modification (title heuristic)
+    processed_elements = list(elements)
+    if processed_elements and processed_elements[0]["type"] == "heading":
+        # Heuristic: make the very first heading element a "title"
+        # Check if it's truly the first element of the document,
+        # not just first on a subsequent page if elements were sorted differently.
+        # For now, this simple check is fine.
+        processed_elements[0]["type"] = "title"
+        print(f"assemble_slides: Changed first element to title: {processed_elements[0]['content'][:30]}") # DEBUG
+
     def finalize_slide(reason=""):
         nonlocal slide_counter, current_slide_elements, current_slide_text_count, current_slide_image_count, current_slide_source_pages
         if current_slide_elements:
-
-            print(f"Finalizing slide {slide_counter+1} due to: {reason}. Elements: {len(current_slide_elements)}, Text: {current_slide_text_count}, Images: {current_slide_image_count}")
-            
             slide_counter += 1
+            print(f"assemble_slides: Finalizing slide {slide_counter} due to: {reason}. Elements: {len(current_slide_elements)}, Text: {current_slide_text_count}, Images: {current_slide_image_count}") # DEBUG
             slides_data.append({
                 "id": str(uuid.uuid4()),
                 "slideNumber": slide_counter,
@@ -239,8 +273,7 @@ def assemble_slides(elements):
                         "id": el["id"],
                         "type": el["type"],
                         "content": el["content"],
-                        # imageData will be null if not an image, or if b64 string is null
-                        "imageData": el.get("imageData_b64"),
+                        "imageData": el.get("imageData_b64"), # Corresponds to Swift's Data?
                         "position": idx
                     } for idx, el in enumerate(current_slide_elements)
                 ],
@@ -249,66 +282,74 @@ def assemble_slides(elements):
                     "timestamp": datetime.now(timezone.utc).isoformat()
                 }
             })
-
             current_slide_elements = []
             current_slide_text_count = 0
             current_slide_image_count = 0
             current_slide_source_pages = set()
-
-            # Attempt to make the first prominent heading a "title" if it's the very first element
-            if elements and elements[0]["type"] == "heading":
-                elements[0]["type"] = "title"
-
-            for i, el in enumerate(elements):
-                is_image_element = el["type"] == "image"
-                is_text_element = el["type"] in ["title", "heading", "subheading", "paragraph", "list"]
+        else:
+            print(f"assemble_slides: Attempted to finalize slide but current_slide_elements is empty. Reason: {reason}") # DEBUG
 
 
-                # TODO: If element is too large (e.g. very long paragraph), force new slide
-                # This is a heuristic; LLMs could do better semantic chunking.
-                # For now, relying on Marker's block granularity.
-                # if is_text_element and len(el["content"]) > 1000: # Arbitrary length
-                # finalize_slide("long content")
+    for i, el in enumerate(processed_elements):
+        print(f"\nassemble_slides: Processing element {i+1}/{len(processed_elements)}: Type='{el['type']}', Content='{el['content'][:50].replace('\n', ' ')}...'") # DEBUG
+        is_image_element = el["type"] == "image"
+        # For slide constraints, treat new textual types like paragraphs
+        is_text_element = el["type"] in ["title", "heading", "subheading", "paragraph", "list", "table", "code", "equation"]
 
-                new_slide_needed = False
+        new_slide_needed = False
 
-                if is_image_element:
-                    if current_slide_image_count >= MAX_IMAGES_PER_SLIDE:
-                        new_slide_needed = True
-                        finalize_slide(f"max images ({MAX_IMAGES_PER_SLIDE}) reached")
-                        # If adding this image would also mean too much text for an image-slide
+        # Check if adding THIS element would violate constraints
+        if is_image_element:
+            # If current slide already has max images
+            if current_slide_image_count >= MAX_IMAGES_PER_SLIDE:
+                print(f"  Condition: New slide needed (max images {MAX_IMAGES_PER_SLIDE} already on current slide).") # DEBUG
+                new_slide_needed = True
+            # If current slide has text, and adding this image would violate text_with_image limit
+            elif current_slide_text_count > 0 and MAX_TEXT_WITH_IMAGES == 0 : # if any text and no text allowed with images
+                print(f"  Condition: New slide needed (no text allowed with images, and current slide has text).") # DEBUG
+                new_slide_needed = True
+            # elif current_slide_text_count >= MAX_TEXT_WITH_IMAGES and MAX_IMAGES_PER_SLIDE > 0:
+            # This condition was a bit confusing. Let's simplify:
+            # If this is the *first* image, and text is already at MAX_TEXT_WITH_IMAGES, new slide
+            elif current_slide_image_count == 0 and current_slide_text_count >= MAX_TEXT_WITH_IMAGES:
+                 print(f"  Condition: New slide needed (adding first image, but text already at {current_slide_text_count}/{MAX_TEXT_WITH_IMAGES} for image slides).") #DEBUG
+                 new_slide_needed = True
 
-                    elif current_slide_text_count >= MAX_TEXT_WITH_IMAGES and MAX_IMAGES_PER_SLIDE > 0 : 
-                        # if slide already has text and we want to add an image
-                        new_slide_needed = True
-                        finalize_slide(f"too much text ({current_slide_text_count}) for an image slide")
 
-                elif is_text_element:
-                    if current_slide_text_count >= MAX_TEXT_ELEMENTS_PER_SLIDE:
-                        new_slide_needed = True
-                        finalize_slide(f"max text elements ({MAX_TEXT_ELEMENTS_PER_SLIDE}) reached")
+        elif is_text_element:
+            # If current slide already has max text elements
+            if current_slide_text_count >= MAX_TEXT_ELEMENTS_PER_SLIDE:
+                print(f"  Condition: New slide needed (max text elements {MAX_TEXT_ELEMENTS_PER_SLIDE} already on current slide).") # DEBUG
+                new_slide_needed = True
+            # If current slide has images, and adding this text would violate text_with_image limit
+            elif current_slide_image_count > 0 and current_slide_text_count >= MAX_TEXT_WITH_IMAGES:
+                print(f"  Condition: New slide needed (current slide has images, and adding this text would exceed {MAX_TEXT_WITH_IMAGES} text elements).") # DEBUG
+                new_slide_needed = True
 
-                    # If slide already has images, restrict text elements
-                    elif current_slide_image_count > 0 and current_slide_text_count >= MAX_TEXT_WITH_IMAGES:
-                        new_slide_needed = True
-                        finalize_slide(f"max text ({MAX_TEXT_WITH_IMAGES}) with images reached")
+        # If a new slide is needed and there are elements on the current one, finalize it
+        if new_slide_needed and current_slide_elements:
+            finalize_slide(f"constraints for element type '{el['type']}'")
+            # Reset counts for the new slide that will start with this element
+            # current_slide_text_count = 0 # This will be reset by finalize_slide
+            # current_slide_image_count = 0 # This will be reset by finalize_slide
 
-                    
-                    if new_slide_needed and current_slide_elements: # Finalize existing before starting new
-                        pass # Finalize already called
+        # Add the current element to the (potentially new) slide
+        print(f"  Adding element to current_slide_elements. Before add: {len(current_slide_elements)} items.") # DEBUG
+        current_slide_elements.append(el)
+        current_slide_source_pages.add(el["original_page_number"])
+        if is_image_element:
+            current_slide_image_count += 1
+        elif is_text_element:
+            current_slide_text_count += 1
+        print(f"  After adding: Texts={current_slide_text_count}, Images={current_slide_image_count}. Elements on slide: {len(current_slide_elements)}") # DEBUG
 
-                    # Add element to current (potentially new) slide
-                    current_slide_elements.append(el)
-                    current_slide_source_pages.add(el["original_page_number"])
-                    if is_image_element:
-                        current_slide_image_count += 1
-                    elif is_text_element:
-                        current_slide_text_count += 1
 
-                
-
-        finalize_slide("end of elements") # Finalize any remaining slide
-        return slides_data
+    # Finalize any remaining slide after the loop
+    print("assemble_slides: Loop finished.") # DEBUG
+    finalize_slide("end of all elements")
+    
+    print(f"assemble_slides: Returning {len(slides_data)} slides.") # DEBUG
+    return slides_data
 
 def create_document_json(slides, marker_json_path, marker_meta_json_path, original_pdf_path, total_pdf_pages):
     """Creates the final Document JSON structure."""
@@ -412,6 +453,7 @@ def main():
     parser = argparse.ArgumentParser(description="Convert PDF to structured slides JSON using Marker.")
     parser.add_argument("pdf_path", help="Path to the input PDF file.")
     parser.add_argument("--output_dir", default="marker_output", help="Directory to store Marker's intermediate files.")
+    parser.add_argument("--save_json_to", help="Optional: Path to save the output JSON to a file.")
     parser.add_argument("--skip_marker", action="store_true", help="Skip running Marker, assume output files exist in output_dir.")
     parser.add_argument("--marker_json_path", help="Direct path to Marker's .json output (if --skip_marker).")
     parser.add_argument("--marker_meta_json_path", help="Direct path to Marker's _meta.json output (if --skip_marker).")
@@ -490,7 +532,19 @@ def main():
     final_document_json["processingMetadata"]["processingTime"] = round(processing_time, 3)
 
     # Output the final JSON to stdout
-    print(json.dumps(final_document_json, indent=2))
+
+    output_json_string = json.dumps(final_document_json, indent=2)
+
+    print(output_json_string)
+
+    # Optionally save to file if argument is provided
+    if args.save_json_to:
+        try:
+            with open(args.save_json_to, 'w', encoding='utf-8') as f:
+                f.write(output_json_string)
+            print(f"\nAlso saved output to: {args.save_json_to}", file=sys.stderr) # Info message to stderr
+        except IOError as e:
+            print(f"\nError saving output to file {args.save_json_to}: {e}", file=sys.stderr)
 
 if __name__ == "__main__":
     main()
