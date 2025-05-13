@@ -1,0 +1,565 @@
+{
+  "table_of_contents": [
+    {
+      "title": "10",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          37.951171875,
+          99.8701171875
+        ],
+        [
+          571.658203125,
+          99.8701171875
+        ],
+        [
+          571.658203125,
+          439.3125
+        ],
+        [
+          37.951171875,
+          439.3125
+        ]
+      ]
+    },
+    {
+      "title": "NOTES ON STARTUPS, OR",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          84.0,
+          506.6015625
+        ],
+        [
+          531.615234375,
+          506.6015625
+        ],
+        [
+          531.615234375,
+          531.3515625
+        ],
+        [
+          84.0,
+          531.3515625
+        ]
+      ]
+    },
+    {
+      "title": "HOW TO BUILD THE FUTURE",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          77.994140625,
+          564.22265625
+        ],
+        [
+          534.005859375,
+          564.22265625
+        ],
+        [
+          534.005859375,
+          588.97265625
+        ],
+        [
+          77.994140625,
+          588.97265625
+        ]
+      ]
+    },
+    {
+      "title": "Peter Thiel\nwith BLAKE MASTERS",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          143.25,
+          642.33984375
+        ],
+        [
+          466.76953125,
+          642.33984375
+        ],
+        [
+          466.76953125,
+          726.64453125
+        ],
+        [
+          143.25,
+          726.64453125
+        ]
+      ]
+    },
+    {
+      "title": "ZERO\nto \nONE",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          234.75,
+          163.4853515625
+        ],
+        [
+          381.75,
+          163.4853515625
+        ],
+        [
+          382.5,
+          293.1328125
+        ],
+        [
+          234.75,
+          293.1328125
+        ]
+      ]
+    },
+    {
+      "title": "Peter Thiel",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          248.25,
+          398.3203125
+        ],
+        [
+          369.75,
+          398.3203125
+        ],
+        [
+          369.75,
+          423.84375
+        ],
+        [
+          248.25,
+          423.84375
+        ]
+      ]
+    },
+    {
+      "title": "Contents",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          273.262451171875,
+          114.5654296875
+        ],
+        [
+          341.2789611816406,
+          114.5654296875
+        ],
+        [
+          341.2789611816406,
+          135.30242919921875
+        ],
+        [
+          273.262451171875,
+          135.30242919921875
+        ]
+      ]
+    },
+    {
+      "title": "Preface: Zero to One",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          70.44873046875,
+          176.6337890625
+        ],
+        [
+          186.44998168945312,
+          176.6337890625
+        ],
+        [
+          186.44998168945312,
+          192.8160400390625
+        ],
+        [
+          70.44873046875,
+          192.8160400390625
+        ]
+      ]
+    },
+    {
+      "title": "Preface",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          275.818359375,
+          113.7919921875
+        ],
+        [
+          337.5587463378906,
+          113.7919921875
+        ],
+        [
+          337.5587463378906,
+          135.30242919921875
+        ],
+        [
+          275.818359375,
+          135.30242919921875
+        ]
+      ]
+    },
+    {
+      "title": "ZERO TO ONE",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          246.6826171875,
+          168.693115234375
+        ],
+        [
+          368.17401123046875,
+          168.693115234375
+        ],
+        [
+          368.17401123046875,
+          188.85308837890625
+        ],
+        [
+          246.6826171875,
+          188.85308837890625
+        ]
+      ]
+    },
+    {
+      "title": "THE CHALLENGE OF THE FUTURE",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          70.3740234375,
+          157.974609375
+        ],
+        [
+          522.7412109375,
+          157.974609375
+        ],
+        [
+          522.7412109375,
+          189.7919921875
+        ],
+        [
+          70.3740234375,
+          189.7919921875
+        ]
+      ]
+    },
+    {
+      "title": "ZERO TO ONE: THE FUTURE OF PROGRESS",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          125.9560546875,
+          131.09765625
+        ],
+        [
+          486.6732177734375,
+          131.09765625
+        ],
+        [
+          486.6732177734375,
+          152.13311767578125
+        ],
+        [
+          125.9560546875,
+          152.13311767578125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          5
+        ],
+        [
+          "Span",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 2256
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          10
+        ],
+        [
+          "Span",
+          10
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          397
+        ],
+        [
+          "Line",
+          26
+        ],
+        [
+          "Text",
+          11
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          161
+        ],
+        [
+          "Line",
+          21
+        ],
+        [
+          "ListItem",
+          14
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          758
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 2887
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          483
+        ],
+        [
+          "Line",
+          18
+        ],
+        [
+          "Text",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          645
+        ],
+        [
+          "Line",
+          27
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Reference",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          343
+        ],
+        [
+          "Line",
+          14
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          426
+        ],
+        [
+          "Line",
+          19
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          699
+        ],
+        [
+          "Line",
+          29
+        ],
+        [
+          "Text",
+          4
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/sample3"
+}

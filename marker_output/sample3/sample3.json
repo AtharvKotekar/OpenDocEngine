@@ -1,0 +1,2867 @@
+{
+  "children": [
+    {
+      "id": "/page/0/Page/14",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/0/SectionHeader/0'></content-ref><content-ref src='/page/0/SectionHeader/4'></content-ref><content-ref src='/page/0/SectionHeader/2'></content-ref><content-ref src='/page/0/SectionHeader/3'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          612.0,
+          0.0
+        ],
+        [
+          612.0,
+          792.0
+        ],
+        [
+          0.0,
+          792.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "children": [
+        {
+          "id": "/page/0/SectionHeader/0",
+          "block_type": "SectionHeader",
+          "html": "<h1>10</h1>",
+          "polygon": [
+            [
+              37.951171875,
+              99.8701171875
+            ],
+            [
+              571.658203125,
+              99.8701171875
+            ],
+            [
+              571.658203125,
+              439.3125
+            ],
+            [
+              37.951171875,
+              439.3125
+            ]
+          ],
+          "bbox": [
+            37.951171875,
+            99.8701171875,
+            571.658203125,
+            439.3125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/0/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/0/SectionHeader/4",
+          "block_type": "SectionHeader",
+          "html": "<h3>NOTES ON STARTUPS, OR</h3>",
+          "polygon": [
+            [
+              84.0,
+              506.6015625
+            ],
+            [
+              531.615234375,
+              506.6015625
+            ],
+            [
+              531.615234375,
+              531.3515625
+            ],
+            [
+              84.0,
+              531.3515625
+            ]
+          ],
+          "bbox": [
+            84.0,
+            506.6015625,
+            531.615234375,
+            531.3515625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/0/SectionHeader/0",
+            "3": "/page/0/SectionHeader/4"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/0/SectionHeader/2",
+          "block_type": "SectionHeader",
+          "html": "<h3>HOW TO BUILD THE FUTURE</h3>",
+          "polygon": [
+            [
+              77.994140625,
+              564.22265625
+            ],
+            [
+              534.005859375,
+              564.22265625
+            ],
+            [
+              534.005859375,
+              588.97265625
+            ],
+            [
+              77.994140625,
+              588.97265625
+            ]
+          ],
+          "bbox": [
+            77.994140625,
+            564.22265625,
+            534.005859375,
+            588.97265625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/0/SectionHeader/0",
+            "3": "/page/0/SectionHeader/2"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/0/SectionHeader/3",
+          "block_type": "SectionHeader",
+          "html": "<h1>Peter Thiel with BLAKE MASTERS</h1>",
+          "polygon": [
+            [
+              143.25,
+              642.33984375
+            ],
+            [
+              466.76953125,
+              642.33984375
+            ],
+            [
+              466.76953125,
+              726.64453125
+            ],
+            [
+              143.25,
+              726.64453125
+            ]
+          ],
+          "bbox": [
+            143.25,
+            642.33984375,
+            466.76953125,
+            726.64453125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/0/SectionHeader/3"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "1": "/page/0/SectionHeader/3"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/1/Page/25",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/1/SectionHeader/0'></content-ref><content-ref src='/page/1/Text/1'></content-ref><content-ref src='/page/1/Text/2'></content-ref><content-ref src='/page/1/SectionHeader/3'></content-ref><content-ref src='/page/1/Text/4'></content-ref><content-ref src='/page/1/Picture/5'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          612.0,
+          0.0
+        ],
+        [
+          612.0,
+          792.0
+        ],
+        [
+          0.0,
+          792.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "children": [
+        {
+          "id": "/page/1/SectionHeader/0",
+          "block_type": "SectionHeader",
+          "html": "<h1>ZERO to  ONE</h1>",
+          "polygon": [
+            [
+              234.75,
+              163.4853515625
+            ],
+            [
+              381.75,
+              163.4853515625
+            ],
+            [
+              382.5,
+              293.1328125
+            ],
+            [
+              234.75,
+              293.1328125
+            ]
+          ],
+          "bbox": [
+            234.75,
+            163.4853515625,
+            382.5,
+            293.1328125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/1/Text/1",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">NOTES ON STARTUPS, OR</p>",
+          "polygon": [
+            [
+              243.0,
+              329.87109375
+            ],
+            [
+              375.75,
+              329.87109375
+            ],
+            [
+              375.75,
+              341.47265625
+            ],
+            [
+              243.0,
+              341.47265625
+            ]
+          ],
+          "bbox": [
+            243.0,
+            329.87109375,
+            375.75,
+            341.47265625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/1/Text/2",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">HOW TO BUILD THE FUTURE</p>",
+          "polygon": [
+            [
+              234.0,
+              356.25
+            ],
+            [
+              384.0,
+              356.25
+            ],
+            [
+              384.0,
+              368.736328125
+            ],
+            [
+              234.0,
+              368.736328125
+            ]
+          ],
+          "bbox": [
+            234.0,
+            356.25,
+            384.0,
+            368.736328125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/1/SectionHeader/3",
+          "block_type": "SectionHeader",
+          "html": "<h3>Peter Thiel</h3>",
+          "polygon": [
+            [
+              248.25,
+              398.3203125
+            ],
+            [
+              369.75,
+              398.3203125
+            ],
+            [
+              369.75,
+              423.84375
+            ],
+            [
+              248.25,
+              423.84375
+            ]
+          ],
+          "bbox": [
+            248.25,
+            398.3203125,
+            369.75,
+            423.84375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/1/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/1/Text/4",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">with BLAKE MASTERS</p>",
+          "polygon": [
+            [
+              261.0,
+              428.25
+            ],
+            [
+              357.0,
+              428.25
+            ],
+            [
+              357.0,
+              440.0859375
+            ],
+            [
+              261.0,
+              440.0859375
+            ]
+          ],
+          "bbox": [
+            261.0,
+            428.25,
+            357.0,
+            440.0859375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/1/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/1/Picture/5",
+          "block_type": "Picture",
+          "html": "",
+          "polygon": [
+            [
+              288.66796875,
+              466.76953125
+            ],
+            [
+              328.7109375,
+              466.76953125
+            ],
+            [
+              328.7109375,
+              520.5
+            ],
+            [
+              288.66796875,
+              520.5
+            ]
+          ],
+          "bbox": [
+            288.66796875,
+            466.76953125,
+            328.7109375,
+            520.5
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/1/SectionHeader/3"
+          },
+          "images": {
+            "/page/1/Picture/5": "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"
+          }
+        }
+      ],
+      "section_hierarchy": {
+        "1": "/page/1/SectionHeader/0",
+        "3": "/page/1/SectionHeader/3"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/2/Page/433",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/2/Text/0'></content-ref><content-ref src='/page/2/Text/1'></content-ref><content-ref src='/page/2/Text/2'></content-ref><content-ref src='/page/2/Text/3'></content-ref><content-ref src='/page/2/Text/4'></content-ref><content-ref src='/page/2/Text/5'></content-ref><content-ref src='/page/2/Text/6'></content-ref><content-ref src='/page/2/Text/7'></content-ref><content-ref src='/page/2/Text/8'></content-ref><content-ref src='/page/2/Text/9'></content-ref><content-ref src='/page/2/Text/10'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          612.0,
+          0.0
+        ],
+        [
+          612.0,
+          792.0
+        ],
+        [
+          0.0,
+          792.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "children": [
+        {
+          "id": "/page/2/Text/0",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">Copyright © 2014 by Peter Thiel</p>",
+          "polygon": [
+            [
+              71.233154296875,
+              92.232421875
+            ],
+            [
+              210.076171875,
+              92.232421875
+            ],
+            [
+              210.076171875,
+              105.73199462890625
+            ],
+            [
+              71.233154296875,
+              105.73199462890625
+            ]
+          ],
+          "bbox": [
+            71.233154296875,
+            92.232421875,
+            210.076171875,
+            105.73199462890625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/1/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/2/Text/1",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">All rights reserved. Published in the United States by Crown Business, an imprint of the Crown Publishing Group, a division of Random House LLC, a Penguin Random House Company, New York. <a href=\"http://www.crownpublishing.com\">www.crownpublishing.com</a></p>",
+          "polygon": [
+            [
+              71.2705078125,
+              117.17578125
+            ],
+            [
+              517.5703125,
+              117.17578125
+            ],
+            [
+              517.5703125,
+              168.3719482421875
+            ],
+            [
+              71.2705078125,
+              168.3719482421875
+            ]
+          ],
+          "bbox": [
+            71.2705078125,
+            117.17578125,
+            517.5703125,
+            168.3719482421875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/1/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/2/Text/2",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">CROWN BUSINESS is a trademark and CROWN and the Rising Sun colophon are registered trademarks of Random House LLC.</p>",
+          "polygon": [
+            [
+              71.419921875,
+              179.5341796875
+            ],
+            [
+              519.662109375,
+              179.5341796875
+            ],
+            [
+              519.662109375,
+              205.09197998046875
+            ],
+            [
+              71.419921875,
+              205.09197998046875
+            ]
+          ],
+          "bbox": [
+            71.419921875,
+            179.5341796875,
+            519.662109375,
+            205.09197998046875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/1/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/2/Text/3",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">Crown Business books are available at special discounts for bulk purchases for sales promotions or corporate use. Special editions, including personalized covers, excerpts of existing books, or books with corporate logos, can be created in large quantities for special needs. For more information, contact Premium Sales at (212) 572-2232 or email <a href=\"mailto:specialmarkets@randomhouse.com\">specialmarkets@randomhouse.com</a>.</p>",
+          "polygon": [
+            [
+              71.419921875,
+              216.755859375
+            ],
+            [
+              540.28125,
+              216.755859375
+            ],
+            [
+              540.28125,
+              267.73199462890625
+            ],
+            [
+              71.419921875,
+              267.73199462890625
+            ]
+          ],
+          "bbox": [
+            71.419921875,
+            216.755859375,
+            540.28125,
+            267.73199462890625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/1/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/2/Text/4",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">Library of Congress Cataloging-in-Publication Data Thiel, Peter A.</p>",
+          "polygon": [
+            [
+              71.5693359375,
+              278.05078125
+            ],
+            [
+              287.7449951171875,
+              278.05078125
+            ],
+            [
+              287.7449951171875,
+              304.4519958496094
+            ],
+            [
+              71.5693359375,
+              304.4519958496094
+            ]
+          ],
+          "bbox": [
+            71.5693359375,
+            278.05078125,
+            287.7449951171875,
+            304.4519958496094
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/1/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/2/Text/5",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">Zero to one: notes on startups, or how to build the future / Peter Thiel with Blake Masters.</p>",
+          "polygon": [
+            [
+              75.4541015625,
+              303.380859375
+            ],
+            [
+              452.42578125,
+              303.380859375
+            ],
+            [
+              452.42578125,
+              317.4119873046875
+            ],
+            [
+              75.4541015625,
+              317.4119873046875
+            ]
+          ],
+          "bbox": [
+            75.4541015625,
+            303.380859375,
+            452.42578125,
+            317.4119873046875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/1/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/2/Text/6",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">pages cm 1. New business enterprises. 2. New products. 3. Entrepreneurship. 4. Diffusion of innovations. I. Title. HD62.5.T525 2014 685.11—dc23 2014006653</p>",
+          "polygon": [
+            [
+              60.5126953125,
+              315.755859375
+            ],
+            [
+              494.01373291015625,
+              315.755859375
+            ],
+            [
+              494.01373291015625,
+              369.2519836425781
+            ],
+            [
+              60.5126953125,
+              369.2519836425781
+            ]
+          ],
+          "bbox": [
+            60.5126953125,
+            315.755859375,
+            494.01373291015625,
+            369.2519836425781
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/1/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/2/Text/7",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">Hardcover ISBN: 978-0-8041-3929-8 eBook ISBN: 978-0-8041-3930-4</p>",
+          "polygon": [
+            [
+              71.681396484375,
+              379.37109375
+            ],
+            [
+              224.6587371826172,
+              379.37109375
+            ],
+            [
+              224.6587371826172,
+              405.97198486328125
+            ],
+            [
+              71.681396484375,
+              405.97198486328125
+            ]
+          ],
+          "bbox": [
+            71.681396484375,
+            379.37109375,
+            224.6587371826172,
+            405.97198486328125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/1/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/2/Text/8",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\"><i>Book</i> <i>design</i> <i>by</i> <i>Ralph</i> <i>Fowler</i> <i>/</i> <i>rlfdesign</i> <i>Graphics</i> <i>by</i> <i>Rodrigo</i> <i>Corral</i> <i>Design</i> <i>Illustrations</i> <i>by</i> <i>Matt</i> <i>Buck</i> <i>Cover</i> <i>design</i> <i>by</i> <i>Michael</i> <i>Nagin</i></p>",
+          "polygon": [
+            [
+              71.49462890625,
+              416.8828125
+            ],
+            [
+              238.58624267578125,
+              416.8828125
+            ],
+            [
+              238.58624267578125,
+              468.61199951171875
+            ],
+            [
+              71.49462890625,
+              468.61199951171875
+            ]
+          ],
+          "bbox": [
+            71.49462890625,
+            416.8828125,
+            238.58624267578125,
+            468.61199951171875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/1/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/2/Text/9",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">Additional credits appear on this page, which constitutes a continuation of this copyright page.</p>",
+          "polygon": [
+            [
+              71.71875,
+              479.14453125
+            ],
+            [
+              461.3661804199219,
+              479.14453125
+            ],
+            [
+              461.3661804199219,
+              492.3719787597656
+            ],
+            [
+              71.71875,
+              492.3719787597656
+            ]
+          ],
+          "bbox": [
+            71.71875,
+            479.14453125,
+            461.3661804199219,
+            492.3719787597656
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/1/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/2/Text/10",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">v3.1</p>",
+          "polygon": [
+            [
+              72.0,
+              512.5823974609375
+            ],
+            [
+              103.86827087402344,
+              512.5823974609375
+            ],
+            [
+              103.86827087402344,
+              532.7424011230469
+            ],
+            [
+              72.0,
+              532.7424011230469
+            ]
+          ],
+          "bbox": [
+            72.0,
+            512.5823974609375,
+            103.86827087402344,
+            532.7424011230469
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/1/SectionHeader/3"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "1": "/page/1/SectionHeader/0",
+        "3": "/page/1/SectionHeader/3"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/3/Page/200",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/3/SectionHeader/0'></content-ref><content-ref src='/page/3/SectionHeader/1'></content-ref><content-ref src='/page/3/ListGroup/200'></content-ref><content-ref src='/page/3/Text/16'></content-ref><content-ref src='/page/3/Text/17'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          612.0,
+          0.0
+        ],
+        [
+          612.0,
+          792.0
+        ],
+        [
+          0.0,
+          792.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "children": [
+        {
+          "id": "/page/3/SectionHeader/0",
+          "block_type": "SectionHeader",
+          "html": "<h3><i>Contents</i></h3>",
+          "polygon": [
+            [
+              273.262451171875,
+              114.5654296875
+            ],
+            [
+              341.2789611816406,
+              114.5654296875
+            ],
+            [
+              341.2789611816406,
+              135.30242919921875
+            ],
+            [
+              273.262451171875,
+              135.30242919921875
+            ]
+          ],
+          "bbox": [
+            273.262451171875,
+            114.5654296875,
+            341.2789611816406,
+            135.30242919921875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/3/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/3/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "<h3><i><a href=\"#page-4-0\">Preface:</a></i> Zero to One</h3>",
+          "polygon": [
+            [
+              70.44873046875,
+              176.6337890625
+            ],
+            [
+              186.44998168945312,
+              176.6337890625
+            ],
+            [
+              186.44998168945312,
+              192.8160400390625
+            ],
+            [
+              70.44873046875,
+              192.8160400390625
+            ]
+          ],
+          "bbox": [
+            70.44873046875,
+            176.6337890625,
+            186.44998168945312,
+            192.8160400390625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/3/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/3/ListGroup/200",
+          "block_type": "ListGroup",
+          "html": "<p block-type='ListGroup'><ul><content-ref src='/page/3/ListItem/2'></content-ref><content-ref src='/page/3/ListItem/3'></content-ref><content-ref src='/page/3/ListItem/4'></content-ref><content-ref src='/page/3/ListItem/5'></content-ref><content-ref src='/page/3/ListItem/6'></content-ref><content-ref src='/page/3/ListItem/7'></content-ref><content-ref src='/page/3/ListItem/8'></content-ref><content-ref src='/page/3/ListItem/9'></content-ref><content-ref src='/page/3/ListItem/10'></content-ref><content-ref src='/page/3/ListItem/11'></content-ref><content-ref src='/page/3/ListItem/12'></content-ref><content-ref src='/page/3/ListItem/13'></content-ref><content-ref src='/page/3/ListItem/14'></content-ref><content-ref src='/page/3/ListItem/15'></content-ref></ul></p>",
+          "polygon": [
+            [
+              74.48291015625,
+              196.83984375
+            ],
+            [
+              300.0234375,
+              196.83984375
+            ],
+            [
+              300.0234375,
+              495.2159729003906
+            ],
+            [
+              74.48291015625,
+              495.2159729003906
+            ]
+          ],
+          "bbox": [
+            74.48291015625,
+            196.83984375,
+            300.0234375,
+            495.2159729003906
+          ],
+          "children": [
+            {
+              "id": "/page/3/ListItem/2",
+              "block_type": "ListItem",
+              "html": "<li block-type=\"ListItem\">The <a href=\"#page-6-0\">Challenge</a> of the Future</li>",
+              "polygon": [
+                [
+                  81.05712890625,
+                  196.83984375
+                ],
+                [
+                  257.9437561035156,
+                  196.83984375
+                ],
+                [
+                  257.9437561035156,
+                  214.416015625
+                ],
+                [
+                  81.05712890625,
+                  214.416015625
+                ]
+              ],
+              "bbox": [
+                81.05712890625,
+                196.83984375,
+                257.9437561035156,
+                214.416015625
+              ],
+              "children": null,
+              "section_hierarchy": {
+                "1": "/page/1/SectionHeader/0",
+                "3": "/page/3/SectionHeader/1"
+              },
+              "images": {}
+            },
+            {
+              "id": "/page/3/ListItem/3",
+              "block_type": "ListItem",
+              "html": "<li block-type=\"ListItem\">Party Like It's 1999</li>",
+              "polygon": [
+                [
+                  80.75830078125,
+                  218.109375
+                ],
+                [
+                  209.3199920654297,
+                  218.109375
+                ],
+                [
+                  209.3199920654297,
+                  236.01605224609375
+                ],
+                [
+                  80.75830078125,
+                  236.01605224609375
+                ]
+              ],
+              "bbox": [
+                80.75830078125,
+                218.109375,
+                209.3199920654297,
+                236.01605224609375
+              ],
+              "children": null,
+              "section_hierarchy": {
+                "1": "/page/1/SectionHeader/0",
+                "3": "/page/3/SectionHeader/1"
+              },
+              "images": {}
+            },
+            {
+              "id": "/page/3/ListItem/4",
+              "block_type": "ListItem",
+              "html": "<li block-type=\"ListItem\">All Happy Companies Are Different</li>",
+              "polygon": [
+                [
+                  80.31005859375,
+                  240.732421875
+                ],
+                [
+                  300.0234375,
+                  240.732421875
+                ],
+                [
+                  300.0234375,
+                  257.61602783203125
+                ],
+                [
+                  80.31005859375,
+                  257.61602783203125
+                ]
+              ],
+              "bbox": [
+                80.31005859375,
+                240.732421875,
+                300.0234375,
+                257.61602783203125
+              ],
+              "children": null,
+              "section_hierarchy": {
+                "1": "/page/1/SectionHeader/0",
+                "3": "/page/3/SectionHeader/1"
+              },
+              "images": {}
+            },
+            {
+              "id": "/page/3/ListItem/5",
+              "block_type": "ListItem",
+              "html": "<li block-type=\"ListItem\">The Ideology of Competition</li>",
+              "polygon": [
+                [
+                  80.31005859375,
+                  262.775390625
+                ],
+                [
+                  260.73748779296875,
+                  262.775390625
+                ],
+                [
+                  260.73748779296875,
+                  279.21600341796875
+                ],
+                [
+                  80.31005859375,
+                  279.21600341796875
+                ]
+              ],
+              "bbox": [
+                80.31005859375,
+                262.775390625,
+                260.73748779296875,
+                279.21600341796875
+              ],
+              "children": null,
+              "section_hierarchy": {
+                "1": "/page/1/SectionHeader/0",
+                "3": "/page/3/SectionHeader/1"
+              },
+              "images": {}
+            },
+            {
+              "id": "/page/3/ListItem/6",
+              "block_type": "ListItem",
+              "html": "<li block-type=\"ListItem\">Last Mover Advantage</li>",
+              "polygon": [
+                [
+                  80.0859375,
+                  284.818359375
+                ],
+                [
+                  225.7574920654297,
+                  284.818359375
+                ],
+                [
+                  225.7574920654297,
+                  300.81597900390625
+                ],
+                [
+                  80.0859375,
+                  300.81597900390625
+                ]
+              ],
+              "bbox": [
+                80.0859375,
+                284.818359375,
+                225.7574920654297,
+                300.81597900390625
+              ],
+              "children": null,
+              "section_hierarchy": {
+                "1": "/page/1/SectionHeader/0",
+                "3": "/page/3/SectionHeader/1"
+              },
+              "images": {}
+            },
+            {
+              "id": "/page/3/ListItem/7",
+              "block_type": "ListItem",
+              "html": "<li block-type=\"ListItem\">You Are Not a Lottery Ticket</li>",
+              "polygon": [
+                [
+                  80.16064453125,
+                  305.89453125
+                ],
+                [
+                  262.37109375,
+                  305.89453125
+                ],
+                [
+                  262.37109375,
+                  322.4159851074219
+                ],
+                [
+                  80.16064453125,
+                  322.4159851074219
+                ]
+              ],
+              "bbox": [
+                80.16064453125,
+                305.89453125,
+                262.37109375,
+                322.4159851074219
+              ],
+              "children": null,
+              "section_hierarchy": {
+                "1": "/page/1/SectionHeader/0",
+                "3": "/page/3/SectionHeader/1"
+              },
+              "images": {}
+            },
+            {
+              "id": "/page/3/ListItem/8",
+              "block_type": "ListItem",
+              "html": "<li block-type=\"ListItem\">Follow the Money</li>",
+              "polygon": [
+                [
+                  79.6376953125,
+                  327.744140625
+                ],
+                [
+                  201.3887481689453,
+                  327.744140625
+                ],
+                [
+                  201.3887481689453,
+                  344.0159912109375
+                ],
+                [
+                  79.6376953125,
+                  344.0159912109375
+                ]
+              ],
+              "bbox": [
+                79.6376953125,
+                327.744140625,
+                201.3887481689453,
+                344.0159912109375
+              ],
+              "children": null,
+              "section_hierarchy": {
+                "1": "/page/1/SectionHeader/0",
+                "3": "/page/3/SectionHeader/1"
+              },
+              "images": {}
+            },
+            {
+              "id": "/page/3/ListItem/9",
+              "block_type": "ListItem",
+              "html": "<li block-type=\"ListItem\">Secrets</li>",
+              "polygon": [
+                [
+                  79.48828125,
+                  349.20703125
+                ],
+                [
+                  137.99501037597656,
+                  349.20703125
+                ],
+                [
+                  137.99501037597656,
+                  365.615966796875
+                ],
+                [
+                  79.48828125,
+                  365.615966796875
+                ]
+              ],
+              "bbox": [
+                79.48828125,
+                349.20703125,
+                137.99501037597656,
+                365.615966796875
+              ],
+              "children": null,
+              "section_hierarchy": {
+                "1": "/page/1/SectionHeader/0",
+                "3": "/page/3/SectionHeader/1"
+              },
+              "images": {}
+            },
+            {
+              "id": "/page/3/ListItem/10",
+              "block_type": "ListItem",
+              "html": "<li block-type=\"ListItem\">Foundations</li>",
+              "polygon": [
+                [
+                  78.890625,
+                  370.86328125
+                ],
+                [
+                  167.94248962402344,
+                  370.86328125
+                ],
+                [
+                  167.94248962402344,
+                  387.2159729003906
+                ],
+                [
+                  78.890625,
+                  387.2159729003906
+                ]
+              ],
+              "bbox": [
+                78.890625,
+                370.86328125,
+                167.94248962402344,
+                387.2159729003906
+              ],
+              "children": null,
+              "section_hierarchy": {
+                "1": "/page/1/SectionHeader/0",
+                "3": "/page/3/SectionHeader/1"
+              },
+              "images": {}
+            },
+            {
+              "id": "/page/3/ListItem/11",
+              "block_type": "ListItem",
+              "html": "<li block-type=\"ListItem\">The Mechanics of Mafia</li>",
+              "polygon": [
+                [
+                  74.87999725341797,
+                  392.326171875
+                ],
+                [
+                  235.0924835205078,
+                  392.326171875
+                ],
+                [
+                  235.0924835205078,
+                  408.81597900390625
+                ],
+                [
+                  74.87999725341797,
+                  408.81597900390625
+                ]
+              ],
+              "bbox": [
+                74.87999725341797,
+                392.326171875,
+                235.0924835205078,
+                408.81597900390625
+              ],
+              "children": null,
+              "section_hierarchy": {
+                "1": "/page/1/SectionHeader/0",
+                "3": "/page/3/SectionHeader/1"
+              },
+              "images": {}
+            },
+            {
+              "id": "/page/3/ListItem/12",
+              "block_type": "ListItem",
+              "html": "<li block-type=\"ListItem\">If You Build It, Will They Come?</li>",
+              "polygon": [
+                [
+                  74.87999725341797,
+                  413.7890625
+                ],
+                [
+                  284.9337463378906,
+                  413.7890625
+                ],
+                [
+                  284.9337463378906,
+                  430.4159851074219
+                ],
+                [
+                  74.87999725341797,
+                  430.4159851074219
+                ]
+              ],
+              "bbox": [
+                74.87999725341797,
+                413.7890625,
+                284.9337463378906,
+                430.4159851074219
+              ],
+              "children": null,
+              "section_hierarchy": {
+                "1": "/page/1/SectionHeader/0",
+                "3": "/page/3/SectionHeader/1"
+              },
+              "images": {}
+            },
+            {
+              "id": "/page/3/ListItem/13",
+              "block_type": "ListItem",
+              "html": "<li block-type=\"ListItem\">Man and Machine</li>",
+              "polygon": [
+                [
+                  74.87999725341797,
+                  435.4453125
+                ],
+                [
+                  201.5924835205078,
+                  435.4453125
+                ],
+                [
+                  201.5924835205078,
+                  452.0159912109375
+                ],
+                [
+                  74.87999725341797,
+                  452.0159912109375
+                ]
+              ],
+              "bbox": [
+                74.87999725341797,
+                435.4453125,
+                201.5924835205078,
+                452.0159912109375
+              ],
+              "children": null,
+              "section_hierarchy": {
+                "1": "/page/1/SectionHeader/0",
+                "3": "/page/3/SectionHeader/1"
+              },
+              "images": {}
+            },
+            {
+              "id": "/page/3/ListItem/14",
+              "block_type": "ListItem",
+              "html": "<li block-type=\"ListItem\">Seeing Green</li>",
+              "polygon": [
+                [
+                  74.87999725341797,
+                  457.875
+                ],
+                [
+                  175.1587371826172,
+                  457.875
+                ],
+                [
+                  175.1587371826172,
+                  473.615966796875
+                ],
+                [
+                  74.87999725341797,
+                  473.615966796875
+                ]
+              ],
+              "bbox": [
+                74.87999725341797,
+                457.875,
+                175.1587371826172,
+                473.615966796875
+              ],
+              "children": null,
+              "section_hierarchy": {
+                "1": "/page/1/SectionHeader/0",
+                "3": "/page/3/SectionHeader/1"
+              },
+              "images": {}
+            },
+            {
+              "id": "/page/3/ListItem/15",
+              "block_type": "ListItem",
+              "html": "<li block-type=\"ListItem\">The Founder's Paradox</li>",
+              "polygon": [
+                [
+                  74.48291015625,
+                  479.14453125
+                ],
+                [
+                  229.0362548828125,
+                  479.14453125
+                ],
+                [
+                  229.0362548828125,
+                  495.2159729003906
+                ],
+                [
+                  74.48291015625,
+                  495.2159729003906
+                ]
+              ],
+              "bbox": [
+                74.48291015625,
+                479.14453125,
+                229.0362548828125,
+                495.2159729003906
+              ],
+              "children": null,
+              "section_hierarchy": {
+                "1": "/page/1/SectionHeader/0",
+                "3": "/page/3/SectionHeader/1"
+              },
+              "images": {}
+            }
+          ],
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/3/SectionHeader/1"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/3/Text/16",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\"><i>Conclusion:</i> Stagnation or Singularity?</p>",
+          "polygon": [
+            [
+              72.0,
+              500.4140625
+            ],
+            [
+              282.5037536621094,
+              500.4140625
+            ],
+            [
+              282.5037536621094,
+              516.8159790039062
+            ],
+            [
+              72.0,
+              516.8159790039062
+            ]
+          ],
+          "bbox": [
+            72.0,
+            500.4140625,
+            282.5037536621094,
+            516.8159790039062
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/3/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/3/Text/17",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\"><i>Acknowledgments</i> <i>Illustration</i> <i>Credits</i> <i>Index</i> <i>About</i> <i>the</i> <i>Authors</i></p>",
+          "polygon": [
+            [
+              72.0,
+              536.765625
+            ],
+            [
+              176.90625,
+              536.765625
+            ],
+            [
+              176.90625,
+              609.7319641113281
+            ],
+            [
+              72.0,
+              609.7319641113281
+            ]
+          ],
+          "bbox": [
+            72.0,
+            536.765625,
+            176.90625,
+            609.7319641113281
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/3/SectionHeader/1"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "1": "/page/1/SectionHeader/0",
+        "3": "/page/3/SectionHeader/1"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/4/Page/796",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/4/SectionHeader/0'></content-ref><content-ref src='/page/4/SectionHeader/1'></content-ref><content-ref src='/page/4/Text/2'></content-ref><content-ref src='/page/4/Text/3'></content-ref><content-ref src='/page/4/Text/4'></content-ref><content-ref src='/page/4/Text/5'></content-ref><content-ref src='/page/4/Text/6'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          612.0,
+          0.0
+        ],
+        [
+          612.0,
+          792.0
+        ],
+        [
+          0.0,
+          792.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "children": [
+        {
+          "id": "/page/4/SectionHeader/0",
+          "block_type": "SectionHeader",
+          "html": "<h3><i>Preface</i></h3>",
+          "polygon": [
+            [
+              275.818359375,
+              113.7919921875
+            ],
+            [
+              337.5587463378906,
+              113.7919921875
+            ],
+            [
+              337.5587463378906,
+              135.30242919921875
+            ],
+            [
+              275.818359375,
+              135.30242919921875
+            ]
+          ],
+          "bbox": [
+            275.818359375,
+            113.7919921875,
+            337.5587463378906,
+            135.30242919921875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/4/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/4/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "<h3>ZERO TO ONE</h3>",
+          "polygon": [
+            [
+              246.6826171875,
+              168.693115234375
+            ],
+            [
+              368.17401123046875,
+              168.693115234375
+            ],
+            [
+              368.17401123046875,
+              188.85308837890625
+            ],
+            [
+              246.6826171875,
+              188.85308837890625
+            ]
+          ],
+          "bbox": [
+            246.6826171875,
+            168.693115234375,
+            368.17401123046875,
+            188.85308837890625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/4/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/4/Text/2",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\"><span id=\"page-4-0\"></span>VERY MOMENT IN BUSINESS happens only once. The next Bill Gates will not build\nan operating system. The next Larry Page or Sergey Brin won't make a search engine. And the next Mark Zuckerberg won't create a social network. If you are copying these guys, you aren't learning from them.</p>",
+          "polygon": [
+            [
+              71.5693359375,
+              220.60797119140625
+            ],
+            [
+              542.8825073242188,
+              220.60797119140625
+            ],
+            [
+              542.8825073242188,
+              293.6159973144531
+            ],
+            [
+              71.5693359375,
+              293.6159973144531
+            ]
+          ],
+          "bbox": [
+            71.5693359375,
+            220.60797119140625,
+            542.8825073242188,
+            293.6159973144531
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/4/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/4/Text/3",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">Of course, it's easier to copy a model than to make something new. Doing what we already know how to do takes the world from 1 to <i>n,</i> adding more of something familiar. But every time we create something new, we go from 0 to 1. The act of creation is singular, as is the moment of creation, and the result is something fresh and strange.</p>",
+          "polygon": [
+            [
+              71.419921875,
+              295.83984375
+            ],
+            [
+              542.7024536132812,
+              295.83984375
+            ],
+            [
+              542.7024536132812,
+              380.0159912109375
+            ],
+            [
+              71.419921875,
+              380.0159912109375
+            ]
+          ],
+          "bbox": [
+            71.419921875,
+            295.83984375,
+            542.7024536132812,
+            380.0159912109375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/4/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/4/Text/4",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">Unless they invest in the difficult task of creating new things, American companies will fail in the future no matter how big their profits remain today. What happens when we've gained everything to be had from fine-tuning the old lines of business that we've inherited? Unlikely as it sounds, the answer threatens to be far worse than the crisis of 2008. Today's \"best practices\" lead to dead ends; the best paths are new and untried.</p>",
+          "polygon": [
+            [
+              71.2705078125,
+              381.3046875
+            ],
+            [
+              542.302490234375,
+              381.3046875
+            ],
+            [
+              542.302490234375,
+              483.69598388671875
+            ],
+            [
+              71.2705078125,
+              483.69598388671875
+            ]
+          ],
+          "bbox": [
+            71.2705078125,
+            381.3046875,
+            542.302490234375,
+            483.69598388671875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/4/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/4/Text/5",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">In a world of gigantic administrative bureaucracies both public and private, searching for a new path might seem like hoping for a miracle. Actually, if American business is going to succeed, we are going to need hundreds, or even thousands, of miracles. This would be depressing but for one crucial fact: humans are distinguished from other species by our ability to work miracles. We call these miracles <i>technology.</i></p>",
+          "polygon": [
+            [
+              71.2705078125,
+              486.10546875
+            ],
+            [
+              542.3800048828125,
+              486.10546875
+            ],
+            [
+              542.3800048828125,
+              570.41015625
+            ],
+            [
+              71.2705078125,
+              570.41015625
+            ]
+          ],
+          "bbox": [
+            71.2705078125,
+            486.10546875,
+            542.3800048828125,
+            570.41015625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/4/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/4/Text/6",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">Technology is miraculous because it allows us to do <i>more</i> <i>with</i> <i>less,</i> ratcheting up our fundamental capabilities to a higher level. Other animals are instinctively driven to build things like dams or honeycombs, but we are the only ones that can invent new things and better ways of making them. Humans don't decide what to build by making choices from some cosmic catalog of options given in advance; instead, by creating new technologies, we rewrite the plan of the world. These are the kind of elementary truths we teach to second graders, but they are easy to forget in a world where so much of what we do is repeat what has been done before.</p>",
+          "polygon": [
+            [
+              71.5693359375,
+              572.9759521484375
+            ],
+            [
+              542.6050415039062,
+              572.9759521484375
+            ],
+            [
+              542.6050415039062,
+              708.3359680175781
+            ],
+            [
+              71.5693359375,
+              708.3359680175781
+            ]
+          ],
+          "bbox": [
+            71.5693359375,
+            572.9759521484375,
+            542.6050415039062,
+            708.3359680175781
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/4/SectionHeader/1"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "1": "/page/1/SectionHeader/0",
+        "3": "/page/4/SectionHeader/1"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/5/Page/502",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/5/Text/0'></content-ref><content-ref src='/page/5/Text/1'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          612.0,
+          0.0
+        ],
+        [
+          612.0,
+          792.0
+        ],
+        [
+          0.0,
+          792.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "children": [
+        {
+          "id": "/page/5/Text/0",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\"><i>Zero</i> <i>to</i> <i>One</i> is about how to build companies that create new things. It draws on everything I've learned directly as a co-founder of PayPal and Palantir and then an investor in hundreds of startups, including Facebook and SpaceX. But while I have noticed many patterns, and I relate them here, this book offers no formula for success. The paradox of teaching entrepreneurship is that such a formula necessarily cannot exist; because every innovation is new and unique, no authority can prescribe in concrete terms how to be innovative. Indeed, the single most powerful pattern I have noticed is that successful people find value in unexpected places, and they do this by thinking about business from first principles instead of formulas.</p>",
+          "polygon": [
+            [
+              71.419921875,
+              71.68798828125
+            ],
+            [
+              542.5610961914062,
+              71.68798828125
+            ],
+            [
+              542.5610961914062,
+              225.93603515625
+            ],
+            [
+              71.419921875,
+              225.93603515625
+            ]
+          ],
+          "bbox": [
+            71.419921875,
+            71.68798828125,
+            542.5610961914062,
+            225.93603515625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/4/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/5/Text/1",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">This book stems from a course about startups that I taught at Stanford in 2012. College students can become extremely skilled at a few specialties, but many never learn what to do with those skills in the wider world. My primary goal in teaching the class was to help my students see beyond the tracks laid down by academic specialties to the broader future that is theirs to create. One of those students, Blake Masters, took detailed class notes, which circulated far beyond the campus, and in <i>Zero</i> <i>to</i> <i>One</i> I have worked with him to revise the notes for a wider audience. There's no reason why the future should happen only at Stanford, or in college, or in Silicon Valley.</p>",
+          "polygon": [
+            [
+              71.12109375,
+              227.77734375
+            ],
+            [
+              542.4824829101562,
+              227.77734375
+            ],
+            [
+              542.4824829101562,
+              381.45599365234375
+            ],
+            [
+              71.12109375,
+              381.45599365234375
+            ]
+          ],
+          "bbox": [
+            71.12109375,
+            227.77734375,
+            542.4824829101562,
+            381.45599365234375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "3": "/page/4/SectionHeader/1"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "1": "/page/1/SectionHeader/0",
+        "3": "/page/4/SectionHeader/1"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/6/Page/681",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/6/SectionHeader/0'></content-ref><content-ref src='/page/6/Text/1'></content-ref><content-ref src='/page/6/Text/2'></content-ref><content-ref src='/page/6/Text/3'></content-ref><content-ref src='/page/6/Text/4'></content-ref><content-ref src='/page/6/Text/5'></content-ref><content-ref src='/page/6/Text/6'></content-ref><content-ref src='/page/6/Text/7'></content-ref><content-ref src='/page/6/Text/8'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          612.0,
+          0.0
+        ],
+        [
+          612.0,
+          792.0
+        ],
+        [
+          0.0,
+          792.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "children": [
+        {
+          "id": "/page/6/SectionHeader/0",
+          "block_type": "SectionHeader",
+          "html": "<h2><span id=\"page-6-0\"></span>THE CHALLENGE OF THE FUTURE</h2>",
+          "polygon": [
+            [
+              70.3740234375,
+              157.974609375
+            ],
+            [
+              522.7412109375,
+              157.974609375
+            ],
+            [
+              522.7412109375,
+              189.7919921875
+            ],
+            [
+              70.3740234375,
+              189.7919921875
+            ]
+          ],
+          "bbox": [
+            70.3740234375,
+            157.974609375,
+            522.7412109375,
+            189.7919921875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/Text/1",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">HENEVER I INTERVIEW someone for a job, I like to ask this question: “What\nimportant truth do very few people agree with you on?”</p>",
+          "polygon": [
+            [
+              72.0,
+              206.927978515625
+            ],
+            [
+              541.5399780273438,
+              206.927978515625
+            ],
+            [
+              541.5399780273438,
+              250.12799072265625
+            ],
+            [
+              72.0,
+              250.12799072265625
+            ]
+          ],
+          "bbox": [
+            72.0,
+            206.927978515625,
+            541.5399780273438,
+            250.12799072265625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/Text/2",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">This question sounds easy because it's straightforward. Actually, it's very hard to answer. It's intellectually difficult because the knowledge that everyone is taught in school is by definition agreed upon. And it's psychologically difficult because anyone trying to answer must say something she knows to be unpopular. Brilliant thinking is rare, but courage is in even shorter supply than genius.</p>",
+          "polygon": [
+            [
+              70.822265625,
+              247.693359375
+            ],
+            [
+              542.5162353515625,
+              247.693359375
+            ],
+            [
+              542.5162353515625,
+              331.7759704589844
+            ],
+            [
+              70.822265625,
+              331.7759704589844
+            ]
+          ],
+          "bbox": [
+            70.822265625,
+            247.693359375,
+            542.5162353515625,
+            331.7759704589844
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/Text/3",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">Most commonly, I hear answers like the following:</p>",
+          "polygon": [
+            [
+              86.4000015258789,
+              334.125
+            ],
+            [
+              366.75872802734375,
+              334.125
+            ],
+            [
+              366.75872802734375,
+              349.05596923828125
+            ],
+            [
+              86.4000015258789,
+              349.05596923828125
+            ]
+          ],
+          "bbox": [
+            86.4000015258789,
+            334.125,
+            366.75872802734375,
+            349.05596923828125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/Text/4",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">\"Our educational system is broken and urgently needs to be fixed.\"</p>",
+          "polygon": [
+            [
+              99.509765625,
+              351.52734375
+            ],
+            [
+              472.08123779296875,
+              351.52734375
+            ],
+            [
+              472.08123779296875,
+              366.3359680175781
+            ],
+            [
+              99.509765625,
+              366.3359680175781
+            ]
+          ],
+          "bbox": [
+            99.509765625,
+            351.52734375,
+            472.08123779296875,
+            366.3359680175781
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/Text/5",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">\"America is exceptional.\"</p>",
+          "polygon": [
+            [
+              100.80000305175781,
+              382.46484375
+            ],
+            [
+              244.47125244140625,
+              382.46484375
+            ],
+            [
+              244.47125244140625,
+              398.0159912109375
+            ],
+            [
+              100.80000305175781,
+              398.0159912109375
+            ]
+          ],
+          "bbox": [
+            100.80000305175781,
+            382.46484375,
+            244.47125244140625,
+            398.0159912109375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/Text/6",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">\"There is no God.\"</p>",
+          "polygon": [
+            [
+              100.107421875,
+              413.40234375
+            ],
+            [
+              208.5050048828125,
+              413.40234375
+            ],
+            [
+              208.5050048828125,
+              429.69598388671875
+            ],
+            [
+              100.107421875,
+              429.69598388671875
+            ]
+          ],
+          "bbox": [
+            100.107421875,
+            413.40234375,
+            208.5050048828125,
+            429.69598388671875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/Text/7",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">Those are bad answers. The first and the second statements might be true, but many people already agree with them. The third statement simply takes one side in a familiar debate. A good answer takes the following form: \"Most people believe in <i>x,</i> but the truth is the opposite of <i>x</i>.\" I'll give my own answer later in this chapter.</p>",
+          "polygon": [
+            [
+              71.71875,
+              431.96484375
+            ],
+            [
+              542.7974853515625,
+              431.96484375
+            ],
+            [
+              542.7974853515625,
+              498.81597900390625
+            ],
+            [
+              71.71875,
+              498.81597900390625
+            ]
+          ],
+          "bbox": [
+            71.71875,
+            431.96484375,
+            542.7974853515625,
+            498.81597900390625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/Text/8",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">What does this contrarian question have to do with the future? In the most minimal sense, the future is simply the set of all moments yet to come. But what makes the future distinctive and important isn't that it hasn't happened yet, but rather that it will be a time when the world looks different from today. In this sense, if nothing about our society changes for the next 100 years, then the future is over 100 years away. If things change radically in the next decade, then the future is nearly at hand. No one can predict the future exactly, but we know two things: it's going to be different, and it must be rooted in today's world. Most answers to the contrarian question are different ways of seeing the present; good answers are as close as we can come to looking into the future.</p>",
+          "polygon": [
+            [
+              71.2705078125,
+              501.69598388671875
+            ],
+            [
+              542.0850219726562,
+              501.69598388671875
+            ],
+            [
+              542.0850219726562,
+              671.6159973144531
+            ],
+            [
+              71.2705078125,
+              671.6159973144531
+            ]
+          ],
+          "bbox": [
+            71.2705078125,
+            501.69598388671875,
+            542.0850219726562,
+            671.6159973144531
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "1": "/page/1/SectionHeader/0",
+        "2": "/page/6/SectionHeader/0"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/7/Page/360",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/7/SectionHeader/0'></content-ref><content-ref src='/page/7/Text/1'></content-ref><content-ref src='/page/7/Figure/2'></content-ref><content-ref src='/page/7/Text/3'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          612.0,
+          0.0
+        ],
+        [
+          612.0,
+          792.0
+        ],
+        [
+          0.0,
+          792.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "children": [
+        {
+          "id": "/page/7/SectionHeader/0",
+          "block_type": "SectionHeader",
+          "html": "<h3>ZERO TO ONE: THE FUTURE OF PROGRESS</h3>",
+          "polygon": [
+            [
+              125.9560546875,
+              131.09765625
+            ],
+            [
+              486.6732177734375,
+              131.09765625
+            ],
+            [
+              486.6732177734375,
+              152.13311767578125
+            ],
+            [
+              125.9560546875,
+              152.13311767578125
+            ]
+          ],
+          "bbox": [
+            125.9560546875,
+            131.09765625,
+            486.6732177734375,
+            152.13311767578125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0",
+            "3": "/page/7/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/7/Text/1",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">When we think about the future, we hope for a future of progress. That progress can take one of two forms. Horizontal or extensive progress means copying things that work—going from 1 to <i>n</i>. Horizontal progress is easy to imagine because we already know what it looks like. Vertical or intensive progress means doing new things going from 0 to 1. Vertical progress is harder to imagine because it requires doing something nobody else has ever done. If you take one typewriter and build 100, you have made horizontal progress. If you have a typewriter and build a word processor, you have made vertical progress.</p>",
+          "polygon": [
+            [
+              70.9716796875,
+              175.5360107421875
+            ],
+            [
+              545.0374755859375,
+              175.5360107421875
+            ],
+            [
+              545.0374755859375,
+              310.89599609375
+            ],
+            [
+              70.9716796875,
+              310.89599609375
+            ]
+          ],
+          "bbox": [
+            70.9716796875,
+            175.5360107421875,
+            545.0374755859375,
+            310.89599609375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0",
+            "3": "/page/7/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/7/Figure/2",
+          "block_type": "Figure",
+          "html": "",
+          "polygon": [
+            [
+              109.669921875,
+              320.203125
+            ],
+            [
+              505.318359375,
+              320.203125
+            ],
+            [
+              505.318359375,
+              621.0703125
+            ],
+            [
+              109.669921875,
+              621.0703125
+            ]
+          ],
+          "bbox": [
+            109.669921875,
+            320.203125,
+            505.318359375,
+            621.0703125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0",
+            "3": "/page/7/SectionHeader/0"
+          },
+          "images": {
+            "/page/7/Figure/2": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAMiBCADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBGzjim5Pr9Kc3SuZ8V+Kbbw5p5dmD3LcRoOTRYTYeK/Flv4dsiS+66YfJGD3968p07x/rVtrf264vJ5YZH+aBpGKKPZc4FR2NhqnjfVprmdyFALNIeij0HrWbpej/2nro0uJ9pYsqsfUAmrSM2z37SdZttZsUuraTKnqAeR9a0kJI5Oa8D0PWNQ8Fa41vchhEG2yxnkH3Fe36XqNvqVkl1bOGjcZBz09qlxNEy/S0wNT6QwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAKmqSzQabPLbpvlVSVX1NeHWel614x8Qv8Aa1kjKt+9ZgRsHoK97PSoIrWGJ3dI1VnOWIGCT70CaMzT9EtND0V7W0jCqsZBbueO9eQ+DV/4uJFnoJXx+Rr3K6A+xzf7jfyrw/wb/wAlHi/66v8AyNUmS0eieM/B0PiC1M0ICXkYyGH8VcL4H1DWNF186W1vK8ROHQg4X3r2ojmoVsrZLhrhYUEzDBcDk0rjsPHzDrg1KOlN2jOaeOlIoKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApMUtFAiG6/49Jv8Acb+VeHeDf+Sjxf8AXV/5Gvcbr/j1m/65t/KvDfBv/JRov+ur/wAjVREz3eilFFSUhBS0UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUCILv8A49Jv+ubfyrw7wb/yUaH/AK6v/I17jd/8ek3+4f5V4d4N/wCSjQ/9dX/kapCZ7wKKKKkpBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQIgu/wDj0m/65t/KvDvBf/JRIv8Arq/8jXuN1/x6Tf8AXNv5V4d4L/5KJF/11f8AkapCZ7xRRRUlIKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKBEF1/x6T/8AXNv5V4d4M/5KJF/11f8Aka9xuv8Aj0n/AOubfyrw7wZ/yUSL/rq/8jVITPeKKKKkpBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQIguv8Aj0n/AOubfyrw7wZ/yUWL/rq/8jXuN3/x6Tf7h/lXh3g3/ko0P/XV/wCRqkJnvFFFFSUgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooEQXf/HpN/uH+VeHeDf8Ako0P/XV/5Gvcbv8A49Jv9w/yrw7wb/yUaH/rq/8AI1SEz3iiiipKQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU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yjNKWjLdDyf8a9Kmvbe3tzNNNGIwMk5rG8Q+DrDxAVllUx3CfdkXrWBbfDF/Nxd6tPNBnIjzx/KgLGDBq8et/FCK5iOYlGwY74wK6X4qnPhQcZPnp/OtG38B6faa3DqNt+68pdoVe9XfFnhz/hJdJFn53lkOrZ+lDYJaFzQBjRLLn/lin/oIrTNVNOs/sNhBbbt3loFz9BVvFDGjN1yybUNFvLVMbpYmVfqRXD/DzWotPhn0K9YQzwSELu43cmvSCma5jXvA2n65J9oJMFyOkkdAmblzf21nbtPPMixqMk5rznQ2k8T+P5NXRSbW34R/U8f4Vdh+F7vJtvdWnlg/uZ/+tXa6bo9rpNottZxrGi9x1JoCxwfxKyNX0UYJG/OfTmvRrfi2g4zlB/Kue8TeFG8QXtlP9o8sWxztPfmulhj8qJUznaoFFxpD6KAMUUhi0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUCILr/j0n/wCubfyrw7wZ/wAlFi/66v8AyNe43XFpP/1zb+VeHeDOPiLF/wBdX/kapCZ7xRRRUlIKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiim5/OgB1FNB5x+tLQAtFFFABRRRQAUUZooAKKKKACiiigAooooAKKTNJk//roAdRTQT3p1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUCILv/AI9Jv9w/yrw7wb/yUaH/AK6v/I17ld/8ek//AFzb+VeG+DP+Sixf9dX/AJGqQme8UUUVJSCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK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pNQs5CSuwEkenrTLa01bxl4ktNRu7JrW0tzlVfr2prYm2p6gjblDDoRmpKjjGFAHQDFSVJogooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKBEN1/x6Tf8AXNv5V4b4M/5KLEf+mr/yNe43X/HpP/1zb+VeHeDP+Sixf9dX/kapCZ7xRRRUlIKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKDRRQAlZniD/kBXn/XI/yrTqnqNsb7Tp7ZW2mRCucdKEDON+FP/Ipf9tW/kK7vbg9K5/wd4dk8NaP9iknEx3ltwXHpXR802RYSm7RnOKfzS0ixop1FFAhpWilxRigDI8SSXkOh3ElicTquRxmsbwV4kGtaXsu5V+2Rkq6ng11sqhhtbkEYIriNW+HsM1415pd1LZTv94qTg/gKaE0bXiXWLfStEuZJJEDFCqruGSSMVz/wttJYtGnupEK/aJWYZGOMmo7X4bSTXEcur6nJeBDna2cH867u2tI7WJIYAEjQYVR0FO+gkmTlRnpSilxRipLA0wqD1FSUmKBWEFLRRQA0AU7FHNGKAGkZ6ilUcUuKWgLCUtJiloGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQIgu/wDjzm/3G/lXh3g3/ko0P/XV/wCRr3G7/wCPOb/cb+VeHeDf+SjQ/wDXV/5GqiJnvFFFFSUgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKbgDmnUYoAQdaWiigAooooAKKKKACiiigBDRS0UAJijFLRQAUUUUAFFFFABRRRQAUUUUAFF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RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABR3oooAhu/+POb/AHG/lXhvgz/ko0X/AF1f+Rr3K7/49Jv9xv5V4b4N/wCSjRf9dX/kaqJLPeKKKKkpBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQIgu/wDj0m/3D/KvDvBv/JRof+ur/wAjXuN1/wAek/8A1zb+VeHeDP8AkosX/XV/5GqQme8UUUVJSCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigRDdf8AHpN/1zb+VeG+DB/xcWIf9NX/AJGvcrr/AI9Jv9xv5V4d4N/5KNF/11f+RqkJnu9FFFSUgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooEQ3f/HpN/uN/KvDfBv/ACUaH/rq/wDI17jd/wDHnN/uN/KvDvBv/JRof+ur/wAjVITPeKKKKkYUUUUDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACjNRlhnGfaoYry3nkkjimV3jOHAP3TQBZzS00EU4HIoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKBEF3/wAec3+438q8O8G/8lGh/wCur/yNe43Z/wBEmH+w38q8M8HNt+IkLN8qiV8k/Q1SEz3qio/Pi/56J+dHnRf89E/OpGSUUzzov+eifnR50X/PRPzoAfRUfnRf89E/Ojzo/wDnon50ASUVH50f/PRPzo8+P/non50ASUVH50f/AD0T86POj/56J+dAElFR+dH/AM9E/Ojzo/8Anon50ASUVH50f/PRPzo86P8A56J+dAElFR+dF/z0T86POi/56J+dAElFR+dH/wA9E/OgTR/89E/OgCSimedF/wA9E/Ojzov+eifnQA+io/Oi/wCeifnR50f/AD0T/vqgCSio/Oj/AOeifnR50f8Az0T86AJKKZ50X/PRPzo86L/non50APopnnRf89E/Ok86P/non5igCSio/Oi/56J+YpfOi/56J+dAD6Kj86P/AJ6J+dHnR/8APRPzoAkoqPzo/wDnon50edH/AM9E/OgCSio/Oj/56J+dHnR/89E/OgCSio/Oj/56J/31R50f/PRP++qAJKKj86P/AJ6J/wB9UedH/wA9E/76oAkoqPzo/wDnon/fVHnR/wDPRPzoAkoqPzo/+eifmKXzov8Anon50APoqPzo+0ifnR50f/PRPzoAkoqPzo/+eifnR50f/PRPzoAkoqPzo/8Anon50edH/wA9E/OgCSio/Oj/AOeifnR50f8Az0T86AJKKj86P/non50edH/z0T86AJKKj86P/non50edH/z0T86AJKKj86P/AJ6J+dHnR/8APRPzoAkoqPzo/wDnon50vnRf89E/OgB9FR+dH/z0T86POj/56J+dAElFR+dH/wA9E/Ojzo/+eifnQBJRUfnR/wDPRPzo8+P/AJ6J+YoAkoqPzo/+eifmKPOj/wCeif8AfQoAkoqPzo/+eifmKPOj/wCeifnQMrX8MtxYzRwSeXM6kI/pXhovdc8GeJHkumkJLZfd0kX1r3gvFnPmJnv81YfiXQLDxBYNDMyCUf6uQEZBpoiRY0DXbPXbBZ7eQFiPmTPK1sA8V8/29xqfgXXghPyg/MAeHFez+HvEdn4gtFltnG8D507rTaGmblFFFSUFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAV7rm2mAGTsOB+FfO13pWrJqU0kNnOGEhIZRX0eRmk8tMfcX8qadhNXPnH7L4h/wCed5+dH2XxD/zyvK+j/LT+4v5UhjT+4v5U7isfOP2XxD/zyvKPsviH/nleV9HeUn9xfyo8pP7i/lRzBY+cfsviH/nleUfZfEP/ADyvK+jvKT+4v5UeUn9xfyouFj5wNv4hHHlXlH2XxD/zyvK+j/KT+4v5UeUn9xfyouFj5x+y+If+eV5R9l8Q/wDPK8r6O8pP7i/lR5Sf3F/Ki4WPnH7L4h/55XlH2XxD/wA8rz86+jvKT+4v5UeUn9xfyouFj5x+y+If+eV5SfZvEP8AzyvK+kPKj/uL+VHlR/3F/Ki4WPnD7L4h/wCeV5R9l8Q/88ryvo/yo/7i/lR5Uf8AcX8qLhY+cPs3iH/nleUfZvEP/PK8r6P8qP8AuL+VHlR/3F/Ki4WPnD7L4h/55XlH2XxD/wA8ryvo/wAqP+4v5UeVH/cX8qOYLHzh9l8Q/wDPK8pPs3iEf8sryvo/y4/7i/lR5af3F/Ki4WPnEW3iH/nleUfZfEP/ADyvPzr6O8tP7i/lR5af3F/Ki4WPnH7L4h/55XlH2XxD/wA8ryvo/wAqP+4v5UeVH/cX8qLhY+cPsviH/nleUfZPEP8AzyvK+jvKj/uL+VHlr/cX8qLhY+cRaeIf+ed5S/ZPEP8AzzvK+jfLX+4v5UeWv9xfyouFj5xNt4h/55XlH2bxD/zyvK+jvKT+4v5UvlR/3F/Ki4WPm/7N4h/55XlL9m8Q/wDPK8r6P8qP+4v5Unlp/cX8qLhY+cfsviH/AJ5XlH2XxD/cvK+jvLT+4v5UnlJ/cX8qLhY+cvsviH/nneUfZfEH/PK8r6OESf3F/Kl8qP8AuL+VFwsfN/2bxD/zyvKX7N4h/wCeV5X0f5Uf9xfyo8qP+4v5UXCx84fZPEH/ADzvKPsviH/nneV9H+VH/cX8qPKj/uL+VFwsfOH2XxD/AM87yj7L4h/55XlfR/lR/wBxfyo8qP8AuL+VFwsfOH2XxD/zzvBR9l8Q/wBy8r6P8qP+4v5UeVH/AHF/Ki4WPnD7L4h/55XlH2XxD/zyvK+j/Kj/ALi/lR5Uf9xfyouFj5w+y+If+eV5R9m8Q/8APK8r6P8AKj/uL+VHlR/3F/Ki4WPnD7N4h/55XlH2XxD/AM8rz86+jvKT+4v5UeUn9xfyouFj5x+zeIf+eV5SfZvEP/PK8r6PESf3F/Kl8qP+4v5UXCx83/ZvEP8AzyvKPs3iH/nleV9IeVH/AHF/Kjyo/wC4v5UXCx83/ZvEP/PK8pfsviH/AJ5Xn519H+VH/cX8qPKj/uL+VFwsfOH2XxD/AM8rz86PsviH/nleV9HeVH/cX8qPKT+4v5UXCx84/ZfEP/PK8o+y+If+eV5+dfR3lJ/cX8qPKT+4v5UXCx84fZvEP/PK8oNt4h/55XlfR/lR/wBxfypfKj/uL+VFwsfN/wBm8Q/88ryl+y+If+eV5X0f5Uf9xfypPLT+4v5UXCx84/ZfEP8AzyvKPsviH/nld19HeWv9xfyo8tf7i/lRcLHzj9m8Q/8APK7pPs3iH/nleV9HiNP7i/lS+Wn9xfyouFj5w+zeIf8AnleUn2bxB/FDeEd+a+jCiZxsXj261y/ivxbY+HbZlUJJdMPkTHf3pJ3Bo8OvEvYnX7ariTb0l64roPBEGsvrKPphYRr98/wmk0rS9U8c60ZpC3lbsu5HCD0r2rRtDtNEsVtLWMKAOW7mm2KKNaiiipLCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAExR2paKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApKWigBKKWigAooooAKKKKACiiigAooooAKKKKAEpaKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAo6kt0bKcWjKJ9h8st0FeL6f4R1jxFr0v9pCRUV/nkbuP9mvdO5poRV6ADPpTTE0UdK0q20ezS1tYwiIOw6/WtADj1o704dKQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACikyKM0ALRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFGaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAxRiiigAxRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFITilpCM0AITxmgHjNZ2uXUtjol5dRY3wxM6g9MgVleCdZutd0MXl0EEhYjCDA6mgTZ045paaKdQMKKKKACikzRmgBaKSml8cUAPopqtup1ABRRRQAUUZozQAUUZpKAFopKKACikJOaTdyOP/rUAPopM0ZoAWkJ9s0ZpjkhGI7CgBy9emKdXF+FfE19q3iPVrG4EflWrYTaOep612eaGhXFopBRmgYtFGaM0AFFGaKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiikFAGP4p/5FfUv+vd/5VgfDAj/hFE/32/ma3/FP/Ir6l/17v/KvP/CPiq00LwpHG0clxcMzfuo/vDk00TI9WBGetOzXB6P8RbS+v0tLy1ls5ZDhfM4zXbAhsNnrzn2osMmzRniuc1zxbp2gLtuHDzH7sacmucj+KEQkJn0i6itx/wAtGHH8qVguejUlZulavZ6xarcWkodD1GeVrN8VeKE8MW0MzwNKsjhPlNFgudLmuY8ZXOq22itJpCEzbvmPoKybn4j20U6LbWFxPGSA0iDIBP4V0Gta2ukaC+pmBnATdszjFOwrj/Cs+o3GhwSamu24I59626ytD1IaxpFtfhDH5y52n61zOs+PptK1SeyXR7qcRtgSIODxSGjus+9Ga80l+KMsaF30K6VB1LdMVqeGfHEviS/8iLTJUReXlLDAHpTsFzt6Koajqdrplo1zdyiOMdzXEz/E2ISsLTS7q4iB/wBYg6/pSC56LRmuX0HxrpuuyeQm6C4H/LKTg1ravqcWkaVPqEwZo4V3EL1POKAuaWfejNcNP8RdOSyhntrea5llXcIo+qj34p+h/EGy1W9FlcW8tpOeiycZosFzs2PDY64rmdG8VDVPEuoaULYx/ZTguT15ra1O7Njps115TS+Wmdi9TXjWh+K5LHxTqOoLp08v2k/6odU5700gue55HSisqHVYv7GTUrke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C0U3d7/pTs5GaACijNJu/wA4oAdRTN9IHJ70CuSUmabuOOnFAOcgUDHZozSA0UALRRn3ozQAUopobNG6gB1FN3c4o3CgB1FIDmloAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAENVbq7gs4GnuJVjjXqWOKtHpXlXju/OpeKLfQ5LjybVQHlbOB60ITOik+JOgxXHkiSRucbghI/Oui0zV7LVofNs51kHcA9K5i2g8G29kLb/Q2wuC7bcmuStbq38M+OIE0y4WSxumClVPAJ/wD11Vib6no+veJrLQPL+2rIEkOAyqSB9TWpa3MV5apPDIHjcAgjmqmsaTba3pslpOoZXHBPUHsa8vtvEV/4H+2aNdK0g5Nu3p6f0pWBux6Df+L9NsNYi0xi8lzJ0CKTj64rm/ihrVuNEGmHcJ5yJFypxgf/AK6m8C+G5VZ9c1T95ezncmf4VPT+lTfFC2gfwo9yYl85ZVCyFckdelMOgvgnxXp95b22lQ+Z56R/NlSBXTarren6ND5l7OsZ7Lnk/hWV4VsbO30C1u0tYll8vJkCDca4S1lsvE3iy6vNXulS2gfZHE564+v0osFzs7b4kaBdTCIzSR/7TqQK6u3uI7mFZopFkjYZBWuLv7Xwdf6e1qDaR7hgOu3IrK+G+qyRajd6JJMZkjJaJgcgKP8A9dKw7nb3niDT7LUEsbicJO4yuRWPd/EPQLO78h5nYg4LKhI/OuS8d2TX/j3T7ZG2mRdpI69RXdR+ENGOnC0NjEcpgyFRuz9aLCuaum6lbapbfabSYSRe3an3l5BYQNcXMixxDqWrzz4cM9pr2q6arfuEfKr9K0PilDdS6NC0KyNGkgMipnpz1osO5o2vxD0G7vvsyTFTnG5lIB/Guo3K8W5SNpGQRXnmlxeD/EenW9qkccEkYGQQEfP1716BbwpbW6RRklFXAJOadhXMSw13TbvX7nTYUxewjLtsx6d/xp134s0+x1yHSpw6TSn5WIIH51yXhv8A5Ktq3+5/8TV/4k6Q0tjFq9un761O5selKwzu8/Lnr3FYWqeK9P0zVoNOmLvcS/dVATzS6DrkN/4Xi1BnHyR/vOehrjPB1sfEni681y4BMULYiz0zxRYLnprSxxwGSRgkYGSzHGK5a7+I2hWk3lGV3I6lFJH6Vk/EzVpUW00iGbyhcn94/wDs8/4VPpNp4Q0+yWBntJpDw7vtJzTsK50+keIdO1lN1nOGb+6Tz+Va6mvGNbew8P8AiC01PQ7pDG74ljQ8V7BZzi6tIpl6OoNKxSZO3KmsvXdatdBsTd3e7ywcfKM1qdq4n4of8io/qW4/SkgbNO48Z6Pa2MV1LcDbKu5UAy2PpUGm+PtC1SZYopijMcDzF2/zrC8D+D7Z9Nh1HU4/PklXMYfkKPpWr4m8Fabf6dI9rbx21xECyNEAvI+lOwrnXhwwyCCD0IPUVz3/AAmWlLqd3YSSMklrncW4BrM+HGszajozW1yS89udpY+lcrFpMer/ABS1CKb5oVlZnX169aEhNne6L4x0zXL57azaQyr13KcVr32pWum25nupVjX/AGjjNQ22j6dYSG5t7SKF1XGYwBkfhXnbQy+OfGdzbzSsNPs25jz15NFhnSH4l6B9o8oyS5/vBDj866XT9TtNUgE1pOsqexqinhfRBbCAadBtxjlBuxXCXVtL4E8WQGzdhp14+0xk8A/5NFgueqPKkcbO5CqOSSelctqHxD0OwuPJaZpDnkxqWH6VlfELV5hbWmmWbsr3bgEr1wcVqaB4L0vTLFBNaxzzMMu0ig80WC5P/wAJro7aZLfpOWjixuTHzc+1a+lapBq+nxXltkxSDjIxXEeNvBtp/ZVxeabGbeZBudIzhWA9hW/4EOfCNm3Xj0+lArkjeMtLj1ibTZZDHJEpZi3A4/8A1Umj+M9L1vUHs7RpDIueSpANcDcaUur/ABSlt3+4AGYeoGTXp9noun2MwmtbSKJwNuUAGRQFyTUtVtNKg8+7mSNfc9fpXOR/Erw+9yIfOkGTjcYzj865LU7m28TeNpYNQuhDY2hxsZsAkdf5V1M1v4NnsDbYs1UjG4bQw/GnYVzrbS8t76ETW8iyIeQVOaj1HU7XTLQ3F5MscY9T1rzPwVqH9keK5tGiuBPayZaIq2QKvfE6Ofz9OnZHksY2zMoGRjI/+vSsVc6DTfHuiapeG2imdHzgFwQD+ddQGGBzwRnNcHptp4S8RJayWojilhwVVcIxI9fWuwvUk/sueO3J3iIhPXOKLAmY2q+O9F0m5+zTTszg8+WC2PyrY0zVrTV7UXFnMrx9/UV5T4TudGtry+tdftwLqSQ/PMvGMnoTXpHh7R9O0qCQ6cwaOZtxw2QPSiwcxvilpq9PWnUigooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooopMBD0ryHxVY2qfEVH1ZG+x3CBQwO0Zx6168elYniHw9Z+IbM292nTlHXqppoTMaP4feGZYwyROyYzkS5rK/snwZY+ILexjWZ7wMGUKxYAjp0qL/hA9fgxDa65KlsOPvHOPzroPDvgm00Sc3UrtcXbf8ALR+TTJRt6pqdvo+myXlydqRr09fQV5Smian45e71mQmMLn7OjDrjp/Su08UeFtQ8RajbiS62afGQWhBwWrqLKyhsbWO2gQJHGAAKAauch4F8TPdRtpN/8l5b/KAeMgVP8Tv+RNlx/wA9k/rTPEPg2a81mDVtLlW3uUPzY4DVo+JtDu9d8Mf2cJQtwWVmc9OKOo7aE3huMyeErdFzloscn2rzjwto2kXWt6lp2so4ufOLRkvt45/xFeqaLZPp2kwWjtl4lALetYniTwTa65cC7hla2vB0kTj+VMVtCJ/h94ZgiMjxyKg5JM3FQ+EbXwyuqXDaMk3nxgozMSQfxrOXwFr1wTBea3K9qewY5/nXY6B4fs/D9mYLVMnqznqaQ7HFeIQf+FqaPgdwCfxFelKO46e9cnqnha5vvGFlrKSqsdvyVz9K67sAeDigLHmXgXjxtrXqGPP5V3Gq6xptnNFaXsiBpzgKw4NY3hzwrcaLr1/qEsyuly2QAOlXfE/ha08RwKJCY7iP/VyrxtoBo5zxf4P0qPTJ9Ts3+yzom9CjYDVt+A7+4v8AwzFJcli443NzmufT4e6rcn7PqGsyy2meFyen513unafDpdnFaW42xIMc0xWOA8NHPxU1fI/g7H/dr0W8t47y0kglG5JF2ketcvpPha4sfGV7rTSqYp1xtxz2/wAK64jPB+opXHbQ8Hu7u/8AD76l4dj3CO4kwvsOOleueFdGTR9Ct7cABtu5j6mq+qeFLbUPEdnqrqMwfeX+8a6RQFUDrgUNiSPL/iZaKNZ026uULWQGyTHHc9627LwN4XvrZJ4Ed1dcgiXNdPquk2usWj2t0geM9PauFb4favYvs0rWpYoM52knj9aaYBqmheCtIu4LadJTLK+NqyZIP4V6JaRJDbIkYwgHArjtE8A29nerfajcPeXQ+bLnIB/Gu3QYUAUmUgPQ1xPxQwPCrH0bI/Su3PpXD/FDB8LnPTeB/KkgZY8Ba1baj4etrcSKJ4ECsmea1te1W20rSZ553QDYQoJ5JPFcXY+Bjc6NZahpV29pdSRAsVJwTUsHw7vr25R9a1WS5RW3bcnB/WmTcl+F9rKthd3kiFRPISuR24qp4f8A+Sq6yCOrHt7mvRbS0gsrVLeFAsaDAAFc1pvha5svGV9rDSqYrgkhadx2OpkTMbAfxKRXmHhu6Xw/451Oyvf3a3LfI5OM8k16ngE5rnfEfhOz8QqGkBiuF5WVeDUoGbhdCnmBkK/3s/1rzPxjex+IfE+naTYnzfs8m+R15x/nFTnwH4g3+QmuyC07Dcc/zrp/DvhCy0DdKmZbl/vSPyaYjlfiFZy6fdaVqagmK3cK3t0rvtK1K31SxiuIJFfeoztPSotai0+5sGttRaNYpDtAcgc+2a4k/D3U7ST/AIk2sSQWzHIXcf8AGmB0XjfW7fStAuFMqedKpjVc888H+dP8CH/ikrTGc45z+Fcj4k8IDTPDN1eX9495dfLtaQnCnPvXXeAv+RRs8k9P8KBI5jSf+Su3eTn90e3sa9LI+XA6muSsfCtxbeOJtcaUGJ0KhfwP+Ndcfu9fxpMpHjVnpGmt44vrHW1ZVmkMkbbtvUk9feu0/wCFeeGwpcxybeu4zcYq54l8H2fiJVkZmhu0xtlWubHgPX2Ywvr0xtumAT0/OmKxb8P2PhKLxI8GmLK13COG3Er78101/quki8XS71o2klGRG4GKr+HfCtloETGAb5n+9Kw5NV/E/g+219kuVdoL2IfJKppDtocz418KWGlWTaxp0ptJ0IIVGxu+mK63w7rBfwpb3+ot5ZC/Mx9B3rmYPh9qV3Mg1jVpJ4VOQmTj+ddzJpts+mjT3hVrfZsK+2MUAjFn0rw/4xsmmEcbrkjzFABB+tcr4QkuNI8bz6LFcSXFmFJySSB6Crcnw91KzlYaRq8lvbOSTGCcD9a6Hwv4Sh8PmSZpWnupD88j0AjqBjoKdTV706kUFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABSYpaKAExRilooAaVyc0myn0YoAbso207FFACbaQKBTqTFACbec0u2iloAbtHpRtFOooATbijbmlooATbSbRTqKAE20YpaKAG7aAvNOooAMCk2ilooATaKBS0UAI1cP8Tz/AMUufdx/MV3BGaqX+m22p2/kXcYkjznBpksz/CnPhjT+/wC5FbQXFRWtrHaW6QRLtjQYUegqakNIMD0owPSlooGJigilooAZtxSkUtFAHI+PNEm1jRgbYn7Rbt5igd8YP9KyNB+IdlDp6WusLJb3cI2MCh5r0EoxPGPrWZe+G9Lv5DJcWUTuep2gZpktHnninxE3jB4dG0iGV42cF5dpC4zXpOh6cNL0e3tB1jQA/XFOsdHsdNTbaW0cY9QozV5VwKGwSDbS7RilopFCbfajFLRQAmKTaKdRQAm0U3bT6KAG7ABS4paKAEAxS0UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUgCiiimAUCiigAooooAKKDSUALSZpaKACiiigAooooAKKKKACiiigAooooAKKKKACiikoAWiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKSonkCLuYjGe5xQBNRTEOcHPWn0CCikooGLRRSUALRkUU3tzQA6jIqPOQcCsvxDezafoN3dQMFlij3KSM0CNjIozWJ4Xvp9S0G2ublg0rrliBgHmtjsaAuPzRUTMFQs5AA75oRgy5ByD0OaAuS0UnaloAKKKSgYtFJiigBaKKKACjNFMOOv8qAH5FJkVWu3KWssinDKhYflXO+DNYvdWtbiS7kDhJCqkLigVzrKKQdOaKBi0UUUAFGaQnimjORk5/CgB9FNXvTqACiiigAooooAKKKBQAhooNFIBeKKwvFGoXGm6DcXNs2JYxkEjIqTw3eT6joltdXDBpXByQMDrTEbNFJg0ooGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAJmjNB601mCqSegFAC7uaTefSuJv9e1PV9TfT9FUBI+JJW7Uwab4o0xlnS7W4G4b1J7Zp2JudyHPcUof2rKv9Uj0zSPtlzwQucD1NcrCvibxEn2gTLaW5OUx1I7UWDmO/L4/+vSeZz0NcKmr6v4cvIrfVts1o52+cD0zWz4rvJYPDUtzaSFSQpVh6EUWDmOh3HOMUF8dq870i58Qa/psSW8nkxAYaVurVI97r3haeNr11ubNmAZj1FFgPQN/tSb889q53xE1xd+H/ALXpszLKqiRSvQjGcVY8M6uNX0eObI81BtdfcUWBPU2S/GaxPEukXOsWSxWty0Dqc5U9azvGWq3EAtdOsWxc3DjH+fxqt4tub3S9CsxFOVm3KGbPX1osF9TrdPga0soYHkLsigFj1Jq1vHPB4rMuriSLw806EeatuGB98Vxmj6p4i8RWjpFKsQRiGkwKLBc9H3Um70rgLW/1jw/rVvaalN50E5wrV1es6tFp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woXaorm/BGm3mmf2kLuIp5s+5Pcc0rlJFvxqQPC12SMjHT8DXA6Ik2izWGqXqedZygqGIyEOf/rV6N4stJ73w9cw26b5WXAUVX0jRRL4Uh06/i2naQVI5HvRcTRu29xHcW6zQsGjYcEd6nU5FcX4ftNX0TUZLCSN5bEnMcnXFdoo4oGhe9LRRSKCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAG9qQdf/rU+kwKAE+lIeO2afijFADT1Fc544/5Fa5+orpMCq99p9rqVq1tdxeZC3VdxGfxBzQBk+EP+Ratf92tzr7VFZ2VvYWqW1tH5cSfdXcTj8TVjAoYkRuQFJbhRya4GDd4j8atMwzaWQwvoT/kV37wpJG0brlWGCM1T0/RtP0tXWyt/KDtub52bJ/EmmmJq5bHGABxil9sU7AFBANIpDccUuMCnYFJgUAMP0PpXMeM7W7bTVuLNpN0DbmVDyRXVbRQVVhggEehoE0cvpni3Sri1QzXSRyooDq5wQawtYvF8Va5Z2Vj+9tYXBlkHQH/ACa6y78JaFfSmS4sFZzySsjr/IirtlpNjpyFLS3WIH0JP6mquibMsRJsjRf7oAp5pdoAxijAqS0N9OaXtn1p2BSYFACDpSfninYFGAKAG9eoo207AFGBQA31x1pMdecf1p+BRgUAcp41trprGG7tGk3QPvZVJGRU2neL9JurUM91HE6jDIzciujaNHBDKCD1BrHuvCOhXsvmz6epfrlZHX+RFNMlpnJ6tdDxTr1naWAMttA+95e2a9CVQqgZ6cVBZaXZadH5dpbrEvtk/qat4HpQ2CQ39acKXFFIoD0pmOMZxin0mBQA3A4PejHanYGc0uBQAzGOe3pRx16Gn4FJgUANOT7fSlHT/GlwKXGaAGEepoA6Cn4pMCgAFLR0ooAaTRg+tOooAbj3o606jFADD0oH5/WnYFGBQA04/wDrUfXNOwKMCgBuB19aMc9c07AzmjAoAb14GR74pwORS4ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z"
+          }
+        },
+        {
+          "id": "/page/7/Text/3",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">At the macro level, the single word for horizontal progress is <i>globalization</i> taking things that work somewhere and making them work everywhere. China is the paradigmatic example of globalization; its 20-year plan is to become like the United States is today. The Chinese have been straightforwardly copying everything that has worked in the developed world: 19th-century railroads, 20th-century air</p>",
+          "polygon": [
+            [
+              71.419921875,
+              632.671875
+            ],
+            [
+              544.9136962890625,
+              632.671875
+            ],
+            [
+              544.9136962890625,
+              716.9759826660156
+            ],
+            [
+              71.419921875,
+              716.9759826660156
+            ]
+          ],
+          "bbox": [
+            71.419921875,
+            632.671875,
+            544.9136962890625,
+            716.9759826660156
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0",
+            "3": "/page/7/SectionHeader/0"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "1": "/page/1/SectionHeader/0",
+        "2": "/page/6/SectionHeader/0",
+        "3": "/page/7/SectionHeader/0"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/8/Page/449",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/8/Text/0'></content-ref><content-ref src='/page/8/Text/1'></content-ref><content-ref src='/page/8/Figure/2'></content-ref><content-ref src='/page/8/Text/3'></content-ref><content-ref src='/page/8/Text/4'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          612.0,
+          0.0
+        ],
+        [
+          612.0,
+          792.0
+        ],
+        [
+          0.0,
+          792.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "children": [
+        {
+          "id": "/page/8/Text/0",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">conditioning, and even entire cities. They might skip a few steps along the way going straight to wireless without installing landlines, for instance—but they're copying all the same.</p>",
+          "polygon": [
+            [
+              71.419921875,
+              72.703125
+            ],
+            [
+              544.958740234375,
+              72.703125
+            ],
+            [
+              544.958740234375,
+              122.97601318359375
+            ],
+            [
+              71.419921875,
+              122.97601318359375
+            ]
+          ],
+          "bbox": [
+            71.419921875,
+            72.703125,
+            544.958740234375,
+            122.97601318359375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0",
+            "3": "/page/7/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/8/Text/1",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">The single word for vertical, 0 to 1 progress is <i>technology</i>. The rapid progress of information technology in recent decades has made Silicon Valley the capital of \"technology\" in general. But there is no reason why technology should be limited to computers. Properly understood, any new and better way of doing things is technology.</p>",
+          "polygon": [
+            [
+              71.419921875,
+              124.2333984375
+            ],
+            [
+              541.96533203125,
+              124.2333984375
+            ],
+            [
+              541.96533203125,
+              208.656005859375
+            ],
+            [
+              71.419921875,
+              208.656005859375
+            ]
+          ],
+          "bbox": [
+            71.419921875,
+            124.2333984375,
+            541.96533203125,
+            208.656005859375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0",
+            "3": "/page/7/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/8/Figure/2",
+          "block_type": "Figure",
+          "html": "",
+          "polygon": [
+            [
+              103.39453125,
+              218.8828125
+            ],
+            [
+              501.732421875,
+              218.8828125
+            ],
+            [
+              501.732421875,
+              500.80078125
+            ],
+            [
+              103.39453125,
+              500.80078125
+            ]
+          ],
+          "bbox": [
+            103.39453125,
+            218.8828125,
+            501.732421875,
+            500.80078125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0",
+            "3": "/page/7/SectionHeader/0"
+          },
+          "images": {
+            "/page/8/Figure/2": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCALvBCYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooyD3pCwHUgUALRUcc8MwYxSxuFODtYHBp4YHoRQAtFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABTW7Uuaa54oExpIwSegrgfHPjeLS4nsLFw944wxHRB/jSeOfG8WlwtYWTh7l+GIP3a86sfD19q2nXer3TMIol3Fz1c+lUkS2XfCXjK50LUf9Jlae3lP7zcc4969vs7uC/tknt3DxuMqy188aFoN1rqXa2v8ArYE8zb/e5xXQ+C/F0/hy/wD7PvywtS20huqGm1cSZ7ivTnrS4qvb3UVxAksLrIjjKsD1qYNzUWsabj6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooASuV8ca7d6HojTWsJd3JXf/AHPeuqNQXNrFdwNDPGskbDBBFAmeGeE/Ct54p1D7XdFhahtzyNzu+lep+I7OCx8F3sFvGFiSIAKB7ity0sbeytlt7eJUjAwABis3xh/yKWof9c/6incVjzX4Rgf23ehjn9yP51v+PPBAv4n1HTkAuFGZFA+8PUe9YPwi/wCQ5e/9cB/6FXsWA6nI4PBBpsEjyD4b+ItQt9Q/siSJpYgMc8mOvYOnuapWmkWVlO80ECI7nJIWr4GOtJsaVh1FFFIYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABSEZpaKAGbec1ieMf+RT1D/rn/AFFbwrC8Zf8AIp6h/wBc/wCooQmea/CL/kOXv/XAf+hV7KFPevG/hD/yHb3/AK4D/wBCr2anISEwaMGlopFBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQACsHxl/yKeof9c/6it4Vg+Mv+RT1D/rn/UUITPN/hD/yHb3/AK4D/wBCr2avGfhD/wAh29/64D/0KvZQachIWiiikUFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAAKwfGX/Ip6h/1z/qK3hWD4y/5FPUP+uf9RQhM83+EP/Idvf8ArgP/AEKvZB1rxv4Q/wDIdvf+uA/9Cr2QdachIdRRRSKCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAFYXjL/kU9Q/65/1FborC8Zf8inqH/XP+ooQmebfCH/kO3v/AFwH/oVeyDrXjfwh/wCQ7e/9cB/6FXsg605CQ6iiikUFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAAKwfGX/Ip6h/1z/qK3hWD4y/5FPUP+uf9RQhM83+EP8AyHb3/rgP/Qq9lArxr4Q/8h29/wCuA/8AQq9mpyEgooopFBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQACsHxl/wAinqH/AFz/AKit4VheMv8AkU9Q/wCuf9RQhM82+EP/ACHb3/rgP/Qq9lrxr4Q/8h29/wCuA/8AQq9lBpyEhaKKKRQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAArC8Zf8AIp6h/wBc/wCordFYXjL/AJFPUP8Arn/UUITPNvhD/wAh29/64D/0KvZB1rxv4Q/8h29/64D/ANCr2QdachIdRRRSKCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAFYXjL/kU9Q/65/wBRW6KwvGX/ACKeof8AXP8AqKEJnm3wh/5Dt7/1wH/oVeyDrXjfwh/5Dt7/ANcB/wChV7IOtOQkOooopFBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQACsHxl/yKeof9c/6it4Vg+Mv+RT1D/rn/AFFCEzzf4Q/8h29/64D/ANCr2Qda8b+EP/Idvf8ArgP/AEKvZB1pyEh1FFFIoKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAAVg+Mv+RT1D/rn/UVvCsLxl/yKeof9c/6ihCZ5t8If+Q7e/wDXAf8AoVeyDrXjfwh/5Dt7/wBcB/6FXsg605CQ6iiikUFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAAKwvGX/Ip6h/1z/qK3awfGX/Ip6h/1z/qKEJnm/wh/wCQ7e/9cB/6FXsg61438If+Q7e/9cB/6FXsoFOQkLRRRSKCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArB8Zf8AIp6h/wBc/wCorerB8Zf8inqH/XP+opoR5v8ACH/kO3v/AFwH/oVeyg1418If+Q7e/wDXAf8AoVeyDrRISHUUUUigooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKwfGX/Ip6h/1z/qK3hWF4y/5FPUP+uf9RQhM82+EP8AyHb3/rgP/Qq9lArxr4Q/8h29/wCuA/8AQq9mpyEgooopFBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFZL+ItOj1hNLaYi6bouKANaimg0u4UALRSbgKNwxmgBaSjcKTcM9aBMbI+yN3/ALoJrmvD3ixdf1G8tBAY/sx656810VwQLeXP9w/yrzX4b/8AIx64RjGfX3oA9OQ5/wAKfTF469admgaFopu8Yo3AmgB1FJmjcO1AC0lBIpM0gBhXL614vj0fXrTS2gaRrggbh2zXUE5ryzxsD/wsHSR0+Zfx6U0Jnqa9BTqap4pdwoGLRSbhijcKAFopNwoyKAFopNwo3DFAC0U0ODS7qAFopNwozQAtFGaKACiiigAooooAKKKKACiiigAooooAKKKKAAVheMv+RT1D/rn/AFFborC8Zf8AIp6h/wBc/wCooQmebfCH/kO3v/XAf+hV7LXjXwh/5Dt7/wBcB/6FXsoNOQkLRRRSKCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK8bvda06T4nWl+l1E1on3pQ3HfvXsleJXnhnS4viNbaSkJWzk4aPcffvVImR69Yalaalb+dZzLLF03KcioL3xDpOnnFzfQREcYZwK5fxHPb+CfDRs9KTZLcNtQbicGs/w/8AD62vtPW71yR5rif5yhY/LRYLnfWerWWooGs7mOYf7LZq2SDnn8K8n8S+HZfCE0er6JM6wK3zxFiQBXcxeJYH8KDWjtwYt2M96VhXNi71C1sY99zMkY/2jiqFt4n0a7m2Q6hAzegYV59oeiXvjm6k1TVp5EtM/uolYgNW9ffDPSHtf9AMlvOOVcOTk/nTA7WZg1tIQchkOD+Fea/DyVIvEGvySMFVW5Y8Ac13Ol2s1l4dhtrlt08cOGYnqcV5L4e0m41nxTqFokrx23mEy7TjcM+tEQZ6zD4o0Wa4+zx6hC0mcYDDNaysp+YHg9+xrznxJ8PdLtdGkutODw3EXzBg5Of1ra+HepTal4Vje4JLxuUye+AKQ7nS3N7bWpX7RNHErHC7jjJ9qrX2uabp237XeRRbhxuYDNcV8W3ddO0xkJDee2MHHOBUmh+BLTU9Liu9ZaS4nmQMMuRt/DNFgudtY6nZ6hDvs7hJVHUqc1bDAjrivJLe2fwf8QIrO3lf7PcAfuycjBzXp2r6hHpWmT3shAEakj69qdhXJbrULSxj33M6RL/tnFUbXxRo15L5UGoQO3oHFefaJod943uZNU1aeSO0LEJGDgEelb+ofDPSjbH+zw9tcAZDK56/nSsF2dyrhlypyPUV5f42/wCSg6R/vL/MVc8D65e22qzeHtTcvLFny3buB/8Aqqn41x/wn+kH/aUfqKEN7HqOQMZqtd39rZIXuZo4lHdmxUWqajHpemzXc3CxqSPrjivNNF0W+8eXkmp6rcSx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oAbsFG0U6igQ0IB0pBGAcin0UDG7BnNGxRnA606igBoRRj2oCAU6igBu33pNgzwaeaSgBoQDvn8KXaAODS0UAJtFIUBp1FAXG7B35pQoFLS0ANCYHWkMYPXmn0UAN2DGKNgp1FADdoHSmlADn0FSUw9aAPP/AB1qupaJqmn3sLlbAMBKB9RXYadqVrqtolzbSK6sucA9Kk1HTLXVLSS2uow8TDGD2rhJ/hlLExGn6rcQxk52A8AUyWRfEvWIbi1h0O1ZZZ5nBKqclcf/AK67fw9avY6HZwSZ3CMZ/KsPQPAFlpNx9ruJGurn+8/OK7AKAOP/ANVAkjifiPrh0/R/sMJP2i6+VfpWl4I0T+xfD8SMP30o3yE9Tnn+tUtT8Gyap4rg1W6ut0EJBWH6Y/wrsUTaAB0AwB6UDsOxxjNO7UUUigooooAKKKKACiiigAooooAKKKKACiiigAooooABWF4y/wCRT1D/AK5/1FborB8Zf8inqH/XP+ooQmeb/CH/AJDt7/1wH/oVeygc1418If8AkO3v/XAf+hV7LTkJC0UUUigooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBMUYpaKADFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAArB8Zf8inqH/XP+oreFYPjL/kU9Q/65/1FCEzzf4Q/wDIdvf+uA/9Cr2avGfhD/yHb3/rgP8A0KvZQachIWiiikUFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF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KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACsHxl/yKeof9c/6it6sHxl/wAinqH/AFz/AKimhHm/wh/5Dt7/ANcB/wChV7KDXjXwh/5Dt7/1wH/oVeyDrRISHUUUUigooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKwfGX/Ip6h/1z/qK3hWD4y/5FPUP+uf9RQhM83+EP/Idvf8ArgP/AEKvZB1rxv4Q/wDIdvf+uA/9Cr2QdachIdRRRSKCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAFYXjL/kU9Q/65/1FborB8Zf8inqH/XP+ooQmeb/AAh/5Dt7/wBcB/6FXsg61438If8AkO3v/XAf+hV7IOtOQkOooopFBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQACsHxl/yKeof9c/6it4Vg+Mv+RT1D/rn/UUITPN/hD/AMh29/64D/0KvZB1rxv4Q/8AIdvf+uA/9Cr2QdachIdRRRSKCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKaT37CkB546UAPooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKwfGX/Ip6h/1z/qK3qwvGX/Ip6h/1z/qKFuJnm3wh/wCQ7e/9cB/6FXsg61438If+Q7e/9cB/6FXsgPNNiQtLmiikUGaM0UUAGaM0UUAGaM0UUAGaM0UUAGaKKKACiiigAozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZozRRQAZpM0tFAFHUr+30yykurhwsUa7ia53w146sdeupbbPlzBvkU/xD2ro760gv7aS2uFDxuNpFeJeKfC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Y6nUNTtdPspLi4mRAgzjcM5rz/wPFLrXjC+18xlIuVTI65z/AI1Zt/hrdXTKdZ1eW6VTkLk4ru9P0630y1S2tEVEQYwB1oFa5558Rh/xU+hkdfOH8xXpsf8Aq1rkvFHhOfXtWsL2G6jiFs4YqyE56f4V1ce4JtYcjr70N6D6nmkw/wCLyp/1w/oa9RHSuObwnO3jka99rQIIwnl7Tnp612I6UAhaKKKRQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEb4Bzk/hXlWsR3fg3xn/a0McktnP/AKwDnGeterMMn271BPaw3URjniWRD2cUITRyx+Ivh5bXzDcNvxny9hJzXK6TFdeM/Gq6xJA8dlARs3DGcf8A6q7keCdA8/zv7PjDk56DFbVvaRWkQigjWOMdFUYqroSRKB8uB06CnhTxzSDj+lPqSrDdpPekCHufyp9FADdnufxpAgA7fhT6KAGbOcg4o2c54p9FADCmf/rUu3PWnUUAMKEjBNAjxznntT6KAG7fSk8v3NPooAZs4680bPen0UAR+X05+6cinbeeadRQA0p7mgr706igBoXHQ8e9J5fpgU+igBmznrS7KdRQA3Z7mjbwc9zTqKAG7eepo2/lTqKAGCMAen0o8sZp9FADSue/FGzinUUBYZ5Y/wDrdqeKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKADGaQgHqKWigAwKKKKAEIzS0lLQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFMLEDr+NADzSYrktQ8fWGn3TwSRTfIcFthxXSWV4t9ZR3MX3ZBkZoFctUUDpSE8cUDFopm885FCsTQK4+ikzS0DCiiigAooooAKKOaKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKYckdM0+igDifiDbQp4fd0iRW3/e2DNb3hrP/CO2Of8Ann/U1k/EX/kWz/v/ANK2PDX/ACLtl/1z/qaZL3NUdKQ9DS0HoaRRieJ7qez8P3dxbvtmjTIP403wpez3/h+2ubht0jrknFZvj2zuJ9DlnimKxxLudQfvCs3wRpd7FbQag14xtSnEJPApkX1PQAaNwrhbnW9V1/UZbLRiIraM7XmYdfpUb6d4n0WNrqG8FyByyPzRYd7HfgilrD8N63Hrlj54BWZflkX0NbdIaYZpN1ITiuG8ReINQtPE9tY2SbsjJX1600hSlY7rd70oOa8/1PTPEhjfUGvwrx/MI04FdB4Q1abV9FSe5x5wO1sUWBM6HNFN6U6kUFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABSZpaSgDkfiL/yLZ/3/wClbHhr/kXbH/rn/U1j/EX/AJFs/wC//Stjw1/yL1j/ANc/6mmT1Nag9KU0h6UijA8YjHhTUD38r+orK0Lzf+FeAw8zGE4x9a1vGP8AyKeof9c/6iq3gxd/hK1UjIMeDTIe5S+HwT+wcjAk8z95nrXXPgo+cYwcj2rhb7TdR8K3Ul7pro1m53PE5qsninV/Ee6zsIYoW6Oxbt+VMVy74MB/4SbWfKz9mz8uOmciu8rE8NaFHodgIslpn+aRic5NbZpFIaehrg7Bft/xEvJXXItvlQ/ia7qVtsEjeimuJ8Dt9o1XVrlvvNIR+tCFJHSa/IYNCupFxkIay/h/C0fhiJnGGkbd+YFO8dSvD4bl2HG4gfqK0vDUIg8PWSekYo6AtzWxS0UUiwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//Z"
+          }
+        },
+        {
+          "id": "/page/8/Text/3",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">Because globalization and technology are different modes of progress, it's possible to have both, either, or neither at the same time. For example, 1815 to 1914 was a period of both rapid technological development and rapid globalization. Between the First World War and Kissinger's trip to reopen relations with China in 1971, there was rapid technological development but not much globalization. Since 1971, we have seen rapid globalization along with limited technological development, mostly confined to IT.</p>",
+          "polygon": [
+            [
+              70.9716796875,
+              515.109375
+            ],
+            [
+              542.2763061523438,
+              515.109375
+            ],
+            [
+              542.2763061523438,
+              634.1759948730469
+            ],
+            [
+              70.9716796875,
+              634.1759948730469
+            ]
+          ],
+          "bbox": [
+            70.9716796875,
+            515.109375,
+            542.2763061523438,
+            634.1759948730469
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0",
+            "3": "/page/7/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/8/Text/4",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">This age of globalization has made it easy to imagine that the decades ahead will bring more convergence and more sameness. Even our everyday language suggests we believe in a kind of technological end of history: the division of the world into the so-called developed and developing nations implies that the \"developed\" world has</p>",
+          "polygon": [
+            [
+              71.2705078125,
+              635.37890625
+            ],
+            [
+              542.0399780273438,
+              635.37890625
+            ],
+            [
+              542.0399780273438,
+              703.2959899902344
+            ],
+            [
+              71.2705078125,
+              703.2959899902344
+            ]
+          ],
+          "bbox": [
+            71.2705078125,
+            635.37890625,
+            542.0399780273438,
+            703.2959899902344
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0",
+            "3": "/page/7/SectionHeader/0"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "1": "/page/1/SectionHeader/0",
+        "2": "/page/6/SectionHeader/0",
+        "3": "/page/7/SectionHeader/0"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/9/Page/731",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/9/Text/0'></content-ref><content-ref src='/page/9/Text/1'></content-ref><content-ref src='/page/9/Text/2'></content-ref><content-ref src='/page/9/Text/3'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          612.0,
+          0.0
+        ],
+        [
+          612.0,
+          792.0
+        ],
+        [
+          0.0,
+          792.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "children": [
+        {
+          "id": "/page/9/Text/0",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">already achieved the achievable, and that poorer nations just need to catch up.</p>",
+          "polygon": [
+            [
+              71.8681640625,
+              71.9296875
+            ],
+            [
+              501.7250061035156,
+              71.9296875
+            ],
+            [
+              501.7250061035156,
+              87.696044921875
+            ],
+            [
+              71.8681640625,
+              87.696044921875
+            ]
+          ],
+          "bbox": [
+            71.8681640625,
+            71.9296875,
+            501.7250061035156,
+            87.696044921875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0",
+            "3": "/page/7/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/9/Text/1",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">But I don't think that's true. My own answer to the contrarian question is that most people think the future of the world will be defined by globalization, but the truth is that technology matters more. Without technological change, if China doubles its energy production over the next two decades, it will also double its air pollution. If every one of India's hundreds of millions of households were to live the way Americans already do—using only today's tools—the result would be environmentally catastrophic. Spreading old ways to create wealth around the world will result in devastation, not riches. In a world of scarce resources, globalization without new technology is unsustainable.</p>",
+          "polygon": [
+            [
+              71.419921875,
+              89.86376953125
+            ],
+            [
+              542.2423095703125,
+              89.86376953125
+            ],
+            [
+              542.2423095703125,
+              243.21600341796875
+            ],
+            [
+              71.419921875,
+              243.21600341796875
+            ]
+          ],
+          "bbox": [
+            71.419921875,
+            89.86376953125,
+            542.2423095703125,
+            243.21600341796875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0",
+            "3": "/page/7/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/9/Text/2",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">New technology has never been an automatic feature of history. Our ancestors lived in static, zero-sum societies where success meant seizing things from others. They created new sources of wealth only rarely, and in the long run they could never create enough to save the average person from an extremely hard life. Then, after 10,000 years of fitful advance from primitive agriculture to medieval windmills and 16th-century astrolabes, the modern world suddenly experienced relentless technological progress from the advent of the steam engine in the 1760s all the way up to about 1970. As a result, we have inherited a richer society than any previous generation would have been able to imagine.</p>",
+          "polygon": [
+            [
+              71.12109375,
+              245.953125
+            ],
+            [
+              542.5150146484375,
+              245.953125
+            ],
+            [
+              542.5150146484375,
+              398.7359924316406
+            ],
+            [
+              71.12109375,
+              398.7359924316406
+            ]
+          ],
+          "bbox": [
+            71.12109375,
+            245.953125,
+            542.5150146484375,
+            398.7359924316406
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0",
+            "3": "/page/7/SectionHeader/0"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/9/Text/3",
+          "block_type": "Text",
+          "html": "<p block-type=\"Text\">Any generation excepting our parents' and grandparents', that is: in the late 1960s, they expected this progress to continue. They looked forward to a four-day workweek, energy too cheap to meter, and vacations on the moon. But it didn't happen. The smartphones that distract us from our surroundings also distract us from the fact that our surroundings are strangely old: only computers and communications have improved dramatically since midcentury. That doesn't mean our parents were wrong to imagine a better future—they were only wrong to expect it as something automatic. Today our challenge is to both imagine and create the new technologies that can make the 21st century more peaceful and prosperous than the 20th.</p>",
+          "polygon": [
+            [
+              71.5693359375,
+              399.8671875
+            ],
+            [
+              542.3924560546875,
+              399.8671875
+            ],
+            [
+              542.3924560546875,
+              571.5359802246094
+            ],
+            [
+              71.5693359375,
+              571.5359802246094
+            ]
+          ],
+          "bbox": [
+            71.5693359375,
+            399.8671875,
+            542.3924560546875,
+            571.5359802246094
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "1": "/page/1/SectionHeader/0",
+            "2": "/page/6/SectionHeader/0",
+            "3": "/page/7/SectionHeader/0"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "1": "/page/1/SectionHeader/0",
+        "2": "/page/6/SectionHeader/0",
+        "3": "/page/7/SectionHeader/0"
+      },
+      "images": null
+    }
+  ],
+  "block_type": "Document"
+}

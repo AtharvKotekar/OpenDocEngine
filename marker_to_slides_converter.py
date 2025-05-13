@@ -10,6 +10,10 @@ import shutil   # For deleting directory tree
 import base64   # For encoding/decoding images
 import sys      # For stderr
 import time
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 MY_ENV = os.environ.copy()
 
@@ -191,26 +195,41 @@ def extract_elements_from_marker(marker_data_input):
     return all_elements
 
 def assemble_slides(elements):
-    # print(f"assemble_slides called with {len(elements)} elements.", file=sys.stderr)
+    print(f"assemble_slides called with {len(elements)} elements.", file=sys.stderr) # Debug
     slides_data = []
-    if not elements: return slides_data
+    if not elements:
+        print("assemble_slides: No elements to process, returning empty slides_data.", file=sys.stderr)
+        return slides_data
 
-    current_slide_elements, current_slide_text_count, current_slide_image_count = [], 0, 0
-    current_slide_source_pages = set()
+    current_slide_elements = [] # Elements for the slide currently being built
     slide_counter = 0
     
-    processed_elements = list(elements) # Make a copy
+    processed_elements = list(elements) 
+
     if processed_elements and processed_elements[0]["type"] == "heading":
-        processed_elements[0]["type"] = "title" # First heading becomes title
-        # print(f"assemble_slides: Changed first element to title.", file=sys.stderr)
+        # This heuristic needs to be smarter, e.g. check original_page_number
+        # For now, if first element of this chunk is heading, make it title.
+        # This might wrongly make a heading on page 2 a "title" if page 1 had no heading.
+        # A better approach would be to identify the true document title once.
+        if processed_elements[0].get("original_page_number") == 1: # A slightly better check
+             processed_elements[0]["type"] = "title"
+             print(f"assemble_slides: Changed first element (on page 1) to title: {processed_elements[0]['content'][:30]}", file=sys.stderr)
+
 
     def finalize_slide(reason=""):
-        nonlocal slide_counter, current_slide_elements, current_slide_text_count, current_slide_image_count, current_slide_source_pages
+        nonlocal slide_counter, current_slide_elements # current_slide_source_pages is NOT nonlocal here
+        
         if current_slide_elements:
             slide_counter += 1
-            # print(f"assemble_slides: Finalizing slide {slide_counter} due to: {reason}. Elements: {len(current_slide_elements)}", file=sys.stderr)
+            print(f"assemble_slides: Finalizing slide {slide_counter} due to: {reason}. Elements: {len(current_slide_elements)}", file=sys.stderr)
+            
             output_slide_elements = []
+            # --- CORRECTED: source_pages is specific to THIS finalized slide ---
+            source_pages_for_this_slide = set() 
+
             for idx, el_data in enumerate(current_slide_elements):
+                source_pages_for_this_slide.add(el_data["original_page_number"]) # Collect from elements on this slide
+                
                 final_image_data_b64_for_json = None
                 if el_data["type"] == "image" and el_data.get("image_reference_path"):
                     image_path = el_data["image_reference_path"]
@@ -225,38 +244,81 @@ def assemble_slides(elements):
                     "id": el_data["id"], "type": el_data["type"], "content": el_data["content"],
                     "imageData": final_image_data_b64_for_json, "position": idx
                 })
+
             slides_data.append({
                 "id": str(uuid.uuid4()), "slideNumber": slide_counter, "elements": output_slide_elements,
-                "metadata": {"sourcePageNumbers": sorted(list(current_slide_source_pages)), "timestamp": datetime.now(timezone.utc).isoformat()}
+                "metadata": {"sourcePageNumbers": sorted(list(source_pages_for_this_slide)), # Use locally collected set
+                             "timestamp": datetime.now(timezone.utc).isoformat()}
             })
-            current_slide_elements, current_slide_text_count, current_slide_image_count = [], 0, 0
-            current_slide_source_pages = set()
+            current_slide_elements = [] # Reset for next slide
         # else: print(f"assemble_slides: Attempted to finalize slide but empty. Reason: {reason}", file=sys.stderr)
 
+
+    # Heuristic character limits - THESE NEED TUNING
+    MAX_CHARS_PER_TEXT_ELEMENT_ROUGHLY = 450 
+    MAX_CHARS_PER_SLIDE_TOTAL_TEXT_ROUGHLY = 700 
+    # MAX_TEXT_ELEMENTS_PER_SLIDE still defined globally (e.g., 3)
+
+    current_slide_char_count = 0
+
     for i, el in enumerate(processed_elements):
-        # print(f"\nassemble_slides: Processing element {i+1}/{len(processed_elements)}: Type='{el['type']}'", file=sys.stderr)
-        is_image_element = el["type"] == "image"
-        is_text_element = el["type"] in ["title", "heading", "subheading", "paragraph", "list", "table", "code", "equation"]
-        new_slide_needed = False
+        el_type = el["type"]
+        el_content_len = len(el.get("content", ""))
+        print(f"\nassemble_slides: Processing element {i+1}/{len(processed_elements)}: Type='{el_type}', Content='{el.get('content', '')[:50].replace('\n', ' ')}...'", file=sys.stderr)
 
-        if is_image_element:
-            if current_slide_image_count >= MAX_IMAGES_PER_SLIDE: new_slide_needed = True
-            elif current_slide_image_count == 0 and current_slide_text_count >= MAX_TEXT_WITH_IMAGES : new_slide_needed = True # Adding first image, but too much text already
-        elif is_text_element:
-            if current_slide_text_count >= MAX_TEXT_ELEMENTS_PER_SLIDE: new_slide_needed = True
-            elif current_slide_image_count > 0 and current_slide_text_count >= MAX_TEXT_WITH_IMAGES: new_slide_needed = True
-        
-        if new_slide_needed and current_slide_elements:
-            finalize_slide(f"constraints for element type '{el['type']}'")
+        if el_type == "title" or el_type == "heading":
+            if current_slide_elements: 
+                finalize_slide(f"new {el_type} encountered")
+            current_slide_elements.append(el)
+            current_slide_char_count = el_content_len 
+            # If the next element is an image or another heading, this heading slide will be finalized.
+            # If the next element is text, it will try to add to this slide.
+            continue 
 
-        current_slide_elements.append(el)
-        current_slide_source_pages.add(el["original_page_number"])
-        if is_image_element: current_slide_image_count += 1
-        elif is_text_element: current_slide_text_count += 1
-        # print(f"  After adding: Texts={current_slide_text_count}, Images={current_slide_image_count}. Elements on slide: {len(current_slide_elements)}", file=sys.stderr)
+        if el_type == "image":
+            if current_slide_elements: 
+                finalize_slide("image encountered, starting new slide for image")
+            current_slide_elements.append(el)
+            finalize_slide("image slide with caption") 
+            current_slide_char_count = 0 
+            continue
 
+        if el_type in ["paragraph", "list", "table", "code", "equation"]:
+            can_add_to_current_slide = False
+            if not current_slide_elements:
+                can_add_to_current_slide = True
+            else:
+                # Count non-image elements currently on the slide
+                num_text_like_elements_on_slide = sum(1 for e_slide in current_slide_elements if e_slide["type"] != "image")
+                
+                if num_text_like_elements_on_slide < MAX_TEXT_ELEMENTS_PER_SLIDE and \
+                   (current_slide_char_count + el_content_len) <= MAX_CHARS_PER_SLIDE_TOTAL_TEXT_ROUGHLY and \
+                   el_content_len <= MAX_CHARS_PER_TEXT_ELEMENT_ROUGHLY:
+                    can_add_to_current_slide = True
+            
+            if can_add_to_current_slide:
+                current_slide_elements.append(el)
+                current_slide_char_count += el_content_len
+                print(f"  Added text element. Slide char count: {current_slide_char_count}, elements on slide: {len(current_slide_elements)}", file=sys.stderr)
+            else:
+                if current_slide_elements:
+                    finalize_slide(f"text element '{el_type}' cannot fit, or slide full")
+                current_slide_elements.append(el)
+                current_slide_char_count = el_content_len
+                print(f"  Started new slide with text element. Slide char count: {current_slide_char_count}", file=sys.stderr)
+
+            # If this element alone is very long, or makes the slide very long, finalize.
+            # This check happens AFTER adding it.
+            if el_content_len > MAX_CHARS_PER_TEXT_ELEMENT_ROUGHLY or \
+               current_slide_char_count > MAX_CHARS_PER_SLIDE_TOTAL_TEXT_ROUGHLY:
+                 if len(current_slide_elements) > 0: # Ensure there are elements to finalize
+                    finalize_slide(f"text element '{el_type}' made slide content long")
+                    current_slide_char_count = 0 # Reset for a potentially new slide if any elements remain
+
+    print("assemble_slides: Loop finished.", file=sys.stderr)
     finalize_slide("end of all elements")
-    # print(f"assemble_slides: Returning {len(slides_data)} slides.", file=sys.stderr)
+    
+    print(f"assemble_slides: Returning {len(slides_data)} slides.", file=sys.stderr)
     return slides_data
 
 def create_document_json(slides, marker_json_path, marker_meta_json_path, original_pdf_path, total_pdf_pages_calculated):
@@ -285,8 +347,8 @@ def run_marker(pdf_path, output_dir_for_marker_files):
     # Marker will create its .json and _meta.json in output_dir_for_marker_files
     os.makedirs(output_dir_for_marker_files, exist_ok=True)
     # Adjust command if your marker CLI is different or needs specific model paths for M-chip
-    cmd = ["marker_single", pdf_path, "--output_dir" , output_dir_for_marker_files,"--output_format","json"] # Small batch for single file
-    print(f"Running Marker: {' '.join(cmd)}", file=sys.stderr) # Print to stderr
+    cmd = ["marker_single", pdf_path, "--output_dir" , output_dir_for_marker_files, "--output_format", "json","--use_llm","--gemini_api_key", os.getenv("LLM_API_KEY"),"--force_ocr"] # Small batch for single file
+    print(f"Running Marker", file=sys.stderr) # Print to stderr
     try:
         # Let Marker's stdout/stderr pass through to this script's stdout/stderr
         # This avoids buffering large amounts of data in 'process.stdout'/'process.stderr'
@@ -441,3 +503,4 @@ if __name__ == "__main__":
     # This makes it cleaner for programmatic capture by Swift.
     exit_code = main()
     sys.exit(exit_code)
+
